@@ -5,6 +5,8 @@ import clsx from "clsx";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import animStyles from "@/app/styles_shared/animations.module.css";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 // Real projects data
 const projects = [
@@ -136,7 +138,16 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
-  const { elementRef, isVisible } = useIntersectionObserver();
+  const { elementRef, isVisible } = useIntersectionObserver({
+    threshold: 0,
+    rootMargin: "0px",
+  });
+  const router = useRouter();
+
+  // Reset scroll position when navigating to this page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-white w-full overflow-x-hidden">
@@ -146,7 +157,7 @@ export default function ProjectsPage() {
             className={clsx(
               "text-3xl md:text-4xl font-bold text-gray-800",
               animStyles.animated,
-              isVisible && animStyles.fadeInScale
+              "animate-fade-in" // Always visible
             )}
           >
             مشروعاتنا
@@ -155,8 +166,7 @@ export default function ProjectsPage() {
             className={clsx(
               "mt-4 text-base md:text-lg text-gray-600",
               animStyles.animated,
-              isVisible && animStyles.slideInRight,
-              "delay-200"
+              "animate-slide-in" // Always visible
             )}
           >
             اكتشف مشروعاتنا الناجحة في مجال الطاقة الشمسية
@@ -176,8 +186,8 @@ export default function ProjectsPage() {
                   "cursor-pointer group",
                   "relative w-full",
                   animStyles.animated,
-                  isVisible && animStyles.slideInUp,
-                  `delay-${index * 200}`
+                  isVisible ? animStyles.slideInUp : "opacity-0",
+                  `delay-${index * 100}`
                 )}
               >
                 <div className="relative h-64 overflow-hidden">
@@ -234,7 +244,7 @@ export default function ProjectsPage() {
             className={clsx(
               "text-center",
               animStyles.animated,
-              isVisible && animStyles.slideInUp,
+              isVisible ? animStyles.slideInUp : "opacity-0",
               "delay-100"
             )}
           >
@@ -249,7 +259,7 @@ export default function ProjectsPage() {
             className={clsx(
               "text-center",
               animStyles.animated,
-              isVisible && animStyles.slideInUp,
+              isVisible ? animStyles.slideInUp : "opacity-0",
               "delay-200"
             )}
           >
@@ -264,7 +274,7 @@ export default function ProjectsPage() {
             className={clsx(
               "text-center",
               animStyles.animated,
-              isVisible && animStyles.slideInUp,
+              isVisible ? animStyles.slideInUp : "opacity-0",
               "delay-300"
             )}
           >
@@ -279,7 +289,7 @@ export default function ProjectsPage() {
             className={clsx(
               "text-center",
               animStyles.animated,
-              isVisible && animStyles.slideInUp,
+              isVisible ? animStyles.slideInUp : "opacity-0",
               "delay-400"
             )}
           >

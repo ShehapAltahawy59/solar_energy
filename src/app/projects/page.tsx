@@ -34,7 +34,7 @@ const projects = [
     location: "الضبعه",
     capacity: "107 كيلو وات",
     imageUrl: "/images/projects/agriculture/project_agriculture_3.jpg",
-    description: "محطة طاقة شمسية للأستاذه عاشور الديب",
+    description: "محطة طاقة شمسية للأستاذ عاشور الديب",
     client: "عاشور الديب",
   },
   {
@@ -43,8 +43,8 @@ const projects = [
     location: "مدخل شجاعه طريق العلمين",
     capacity: "60 كيلو وات",
     imageUrl: "/images/projects/agriculture/project_agriculture_4.jpg",
-    description: "محطة طاقة شمسية للأستاذ احمد عبد الرحمن (شركه القائد)",
-    client: "احمد عبد الرحمن - شركه القائد",
+    description: "محطة طاقة شمسية للأستاذ احمد عبد الرحمن (شركة القائد)",
+    client: "احمد عبد الرحمن - شركة القائد",
   },
   {
     id: "5",
@@ -121,7 +121,7 @@ const projects = [
     location: "البحيره - وادي النطرون - المجابرة",
     capacity: "105.5 كيلو وات",
     imageUrl: "/images/projects/wells/project_well_3_back_view.jpg",
-    description: "محطة طاقة شمسية بجوار شركه الوطنيه للدواجن",
+    description: "محطة طاقة شمسية بجوار شركة الوطنية للدواجن",
     expectedDate: "ابريل 2025",
   },
   {

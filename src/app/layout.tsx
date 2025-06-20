@@ -2,6 +2,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import { Noto_Kufi_Arabic } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import clsx from "clsx";
 
 const notoKufiArabic = Noto_Kufi_Arabic({
   subsets: ["arabic"],
@@ -41,14 +42,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" className="overflow-x-hidden w-full">
       <head>
         <link rel="icon" type="image/png" href="/images/logo/re7ab.png" />
         <link rel="apple-touch-icon" href="/images/logo/re7ab.png" />
       </head>
-      <body className={`${notoKufiArabic.variable} font-kufi`}>
-        <Navbar />
-        {children}
+      <body
+        className={clsx(
+          notoKufiArabic.variable,
+          "font-kufi",
+          "overflow-x-hidden",
+          "w-full",
+          "relative"
+        )}
+      >
+        <div className="flex min-h-screen flex-col w-full overflow-x-hidden">
+          <Navbar />
+          <main className="flex-1 w-full overflow-x-hidden">{children}</main>
+        </div>
       </body>
     </html>
   );

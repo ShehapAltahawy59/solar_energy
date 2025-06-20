@@ -139,12 +139,12 @@ export default function ProjectsPage() {
   const { elementRef, isVisible } = useIntersectionObserver();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white py-16">
-      <div className="container mx-auto px-4">
+    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white w-full overflow-x-hidden">
+      <div className="container mx-auto px-4 max-w-[100vw] pt-24 md:pt-20">
         <div className="mb-12 text-right">
           <h1
             className={clsx(
-              "text-4xl font-bold text-gray-800",
+              "text-3xl md:text-4xl font-bold text-gray-800",
               animStyles.animated,
               isVisible && animStyles.fadeInScale
             )}
@@ -153,7 +153,7 @@ export default function ProjectsPage() {
           </h1>
           <p
             className={clsx(
-              "mt-4 text-lg text-gray-600",
+              "mt-4 text-base md:text-lg text-gray-600",
               animStyles.animated,
               isVisible && animStyles.slideInRight,
               "delay-200"
@@ -164,8 +164,8 @@ export default function ProjectsPage() {
         </div>
 
         {/* Projects Grid */}
-        <div ref={elementRef}>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div ref={elementRef} className="w-full">
+          <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
               <div
                 key={project.id}
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
                   "transform transition-all duration-500 ease-in-out",
                   "hover:shadow-2xl hover:-translate-y-2 hover:bg-green-50",
                   "cursor-pointer group",
-                  "relative",
+                  "relative w-full",
                   animStyles.animated,
                   isVisible && animStyles.slideInUp,
                   `delay-${index * 200}`
@@ -190,11 +190,11 @@ export default function ProjectsPage() {
                   />
                   <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
                 </div>
-                <div className="p-6 transform transition-transform duration-500 group-hover:translate-x-1">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-green-700">
+                <div className="p-4 md:p-6 transform transition-transform duration-500 group-hover:translate-x-1">
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-800 group-hover:text-green-700">
                     {project.title}
                   </h3>
-                  <div className="text-gray-600 mb-4">
+                  <div className="text-sm md:text-base text-gray-600 mb-4">
                     <p className="mb-1 flex items-center gap-2">
                       <span className="text-green-600">📍</span>
                       {project.location}
@@ -218,7 +218,7 @@ export default function ProjectsPage() {
                       </p>
                     )}
                   </div>
-                  <p className="text-gray-700 group-hover:text-gray-900">
+                  <p className="text-sm md:text-base text-gray-700 group-hover:text-gray-900">
                     {project.description}
                   </p>
                 </div>
@@ -229,7 +229,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 grid grid-cols-1 gap-8 rounded-2xl bg-white p-8 shadow-lg md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-6 md:gap-8 rounded-2xl bg-white p-6 md:p-8 shadow-lg md:grid-cols-2 lg:grid-cols-4 w-full">
           <div
             className={clsx(
               "text-center",
@@ -238,8 +238,12 @@ export default function ProjectsPage() {
               "delay-100"
             )}
           >
-            <h3 className="text-3xl font-bold text-green-600">+120</h3>
-            <p className="mt-2 text-gray-600">مشروعًا ناجحًا</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-green-600">
+              +120
+            </h3>
+            <p className="mt-2 text-sm md:text-base text-gray-600">
+              مشروعًا ناجحًا
+            </p>
           </div>
           <div
             className={clsx(
@@ -249,8 +253,12 @@ export default function ProjectsPage() {
               "delay-200"
             )}
           >
-            <h3 className="text-3xl font-bold text-green-600">45</h3>
-            <p className="mt-2 text-gray-600">ميجاوات قدرة مركبة</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-green-600">
+              45
+            </h3>
+            <p className="mt-2 text-sm md:text-base text-gray-600">
+              ميجاوات قدرة مركبة
+            </p>
           </div>
           <div
             className={clsx(
@@ -260,8 +268,12 @@ export default function ProjectsPage() {
               "delay-300"
             )}
           >
-            <h3 className="text-3xl font-bold text-green-600">10</h3>
-            <p className="mt-2 text-gray-600">سنوات ضمان</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-green-600">
+              10
+            </h3>
+            <p className="mt-2 text-sm md:text-base text-gray-600">
+              سنوات ضمان
+            </p>
           </div>
           <div
             className={clsx(
@@ -271,8 +283,12 @@ export default function ProjectsPage() {
               "delay-400"
             )}
           >
-            <h3 className="text-3xl font-bold text-green-600">98%</h3>
-            <p className="mt-2 text-gray-600">رضا العملاء</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-green-600">
+              98%
+            </h3>
+            <p className="mt-2 text-sm md:text-base text-gray-600">
+              رضا العملاء
+            </p>
           </div>
         </div>
       </div>

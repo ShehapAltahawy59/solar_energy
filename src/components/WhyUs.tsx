@@ -58,7 +58,7 @@ export default function WhyUs() {
           )}
         >
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            لماذا تختار الرحاب للطاقة الشمسية؟
+            لماذا تختار المهندس للطاقة الشمسية؟
           </h2>
           <p className="text-lg text-gray-600 mb-4">
             نحن نقدم حلولاً متكاملة ومبتكرة في مجال الطاقة الشمسية
@@ -178,13 +178,14 @@ export default function WhyUs() {
           >
             قيم الشركة
           </h3>
-          <div className="flex flex-row gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {companyValues.map((value, index) => (
               <div
                 key={value.title}
                 className={clsx(
                   styles.card,
                   styles.featureCard,
+                  "w-full",
                   animStyles.animated,
                   isSectionVisible &&
                     (index % 2 === 0

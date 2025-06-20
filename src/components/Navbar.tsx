@@ -21,6 +21,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [activeSection, setActiveSection] = useState("hero");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,11 +74,16 @@ export default function Navbar() {
   }, [pathname]);
 
   const handleNavClick = (section: string, href: string) => {
-    if (href.startsWith("/") && !href.startsWith("/#")) {
-      // For full page navigation (like /projects)
+    setIsMenuOpen(false); // Close menu after click
+
+    // For direct page navigation (like /projects)
+    if (href.startsWith("/") && !href.includes("#")) {
       router.push(href);
-    } else {
-      // For hash navigation
+      return;
+    }
+
+    // For hash navigation on homepage
+    if (pathname === "/") {
       const element = document.getElementById(section);
       if (element) {
         const elementPosition = element.getBoundingClientRect().top;
@@ -91,29 +97,61 @@ export default function Navbar() {
           behavior: "smooth",
         });
       }
+    } else {
+      // If not on homepage and it's a hash link, navigate to homepage first
+      router.push(href);
     }
   };
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20 md:h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative w-12 h-12 rounded-full overflow-hidden bg-white shadow-md">
+            <div className="relative w-16 h-16 md:w-12 md:h-12 rounded-full overflow-hidden bg-white shadow-md">
               <Image
                 src="/images/logo/re7ab.png"
-                alt="الرحاب للطاقة الشمسية"
+                alt="المهندس للطاقة الشمسية"
                 fill
                 className="object-contain p-1"
                 priority
               />
             </div>
-            <span className="text-2xl font-bold text-green-600">
-              الرحاب للطاقة الشمسية
+            <span className="text-xl md:text-2xl font-bold text-green-600 hidden md:block">
+              المهندس للطاقة الشمسية
             </span>
           </Link>
 
-          <div className="flex space-x-1 items-center">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 rounded-lg hover:bg-green-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-6 h-6 text-green-600"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+
+          <div className="hidden md:flex space-x-1 items-center">
             {NAV_ITEMS.map((item) => (
               <button
                 key={item.section}
@@ -123,6 +161,39 @@ export default function Navbar() {
                   "hover:bg-green-50",
                   {
                     "text-green-600 font-semibold":
+                      activeSection === item.section ||
+                      (item.section === "hero" && pathname === "/"),
+                    "text-gray-600":
+                      activeSection !== item.section &&
+                      !(item.section === "hero" && pathname === "/"),
+                  }
+                )}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div
+          className={clsx(
+            "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
+            {
+              "max-h-96 pb-4": isMenuOpen,
+              "max-h-0": !isMenuOpen,
+            }
+          )}
+        >
+          <div className="flex flex-col gap-2 pt-2">
+            {NAV_ITEMS.map((item) => (
+              <button
+                key={item.section}
+                onClick={() => handleNavClick(item.section, item.href)}
+                className={clsx(
+                  "px-4 py-3 rounded-lg transition-all duration-200 text-right",
+                  "hover:bg-green-50 w-full",
+                  {
+                    "bg-green-50 text-green-600 font-semibold":
                       activeSection === item.section ||
                       (item.section === "hero" && pathname === "/"),
                     "text-gray-600":

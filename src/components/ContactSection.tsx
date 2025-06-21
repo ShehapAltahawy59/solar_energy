@@ -63,87 +63,75 @@ export default function ContactSection() {
           <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             {dictionary.contact.subtitle}
           </p>
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-2xl p-8 border border-gray-700">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-gray-300 font-medium mb-2"
+
+          {/* Contact Information */}
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-2xl p-8 border border-gray-700 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Address */}
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                  <span>📍</span> {dictionary.contact.address.title}
+                </h3>
+                <div className="flex items-start gap-3">
+                  <p className="text-gray-300 flex-1">
+                    {dictionary.contact.address.text}
+                  </p>
+                  <a
+                    href={dictionary.contact.address.mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-500 hover:text-green-400 transition-colors"
+                    title="Open in Google Maps"
                   >
-                    {dictionary.contact.form.name}
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-white placeholder-gray-400"
-                    required
-                  />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              {/* Phone and Email */}
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-2">
+                    <span>📞</span> {dictionary.contact.phone.title}
+                  </h3>
+                  <a
+                    href={`tel:${dictionary.contact.phone.text}`}
+                    className="text-gray-300 hover:text-green-500 transition-colors"
+                  >
+                    {dictionary.contact.phone.text}
+                  </a>
                 </div>
                 <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-gray-300 font-medium mb-2"
+                  <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-2">
+                    <span>✉️</span> {dictionary.contact.email.title}
+                  </h3>
+                  <a
+                    href={`mailto:${dictionary.contact.email.text}`}
+                    className="text-gray-300 hover:text-green-500 transition-colors"
                   >
-                    {dictionary.contact.form.phone}
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-white placeholder-gray-400"
-                    required
-                  />
+                    {dictionary.contact.email.text}
+                  </a>
                 </div>
               </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-gray-300 font-medium mb-2"
-                >
-                  {dictionary.contact.form.email}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-white placeholder-gray-400"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-gray-300 font-medium mb-2"
-                >
-                  {dictionary.contact.form.message}
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-white placeholder-gray-400"
-                  required
-                ></textarea>
-              </div>
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-500 transition-colors transform hover:scale-105 duration-200"
-                >
-                  {dictionary.contact.form.send}
-                </button>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

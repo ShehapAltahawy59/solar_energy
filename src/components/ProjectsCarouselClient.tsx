@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import animStyles from "@/app/styles_shared/animations.module.css";
 import clsx from "clsx";
@@ -87,11 +88,12 @@ export default function ProjectsCarouselClient({
               >
                 {project.imageUrl && (
                   <div className="relative h-48 w-full mb-4 overflow-hidden rounded-lg">
-                    <img
+                    <Image
                       src={project.imageUrl}
                       alt={project.title}
+                      fill
                       className={clsx(
-                        "w-full h-full object-cover",
+                        "object-cover",
                         "transition-transform duration-500 ease-in-out",
                         "group-hover:scale-110"
                       )}

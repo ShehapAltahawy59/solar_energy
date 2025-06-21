@@ -93,7 +93,7 @@
         "capacity": "150 كيلو وات",
         "client": "عماد فرفور وعلاء الضبع",
         "description": "محطة طاقة شمسية للأستاذ عماد فرفور والاستاذ علاء الضبع",
-        "image": "/images/projects/agriculture/project_agriculture_1.jpg"
+        "image": "/images/finishedPro1.jfif"
       },
       {
         "id": 2,
@@ -102,7 +102,7 @@
         "capacity": "100 كيلو وات",
         "client": "احمد عايد - مصنع المراعي",
         "description": "محطة طاقة شمسية لمصنع الأستاذ احمد عايد (مصنع المراعي)",
-        "image": "/images/projects/agriculture/project_agriculture_3.jpg"
+        "image": "/images/finishedPro3.jfif"
       },
       {
         "id": 3,
@@ -110,7 +110,7 @@
         "location": "طريق وادي النطرون العلمين",
         "capacity": "90 كيلو وات",
         "description": "محطة طاقة شمسية لمزرعة نبع البركة",
-        "image": "/images/projects/agriculture/project_agriculture_4.jpg"
+        "image": "/images/finishedPro4.jfif"
       }
     ],
     "completed": [
@@ -279,11 +279,21 @@
     }
   },
   "contact": {
-    "title": "اتصل بنا",
-    "subtitle": "نحن هنا لمساعدتك. تواصل معنا لمناقشة احتياجاتك من الطاقة الشمسية وسنقدم لك الحلول المناسبة.",
-    "phone": "الهاتف",
-    "email": "البريد الإلكتروني",
-    "address": "العنوان",
+    "title": "تواصل معنا",
+    "subtitle": "نحن هنا لمساعدتك",
+    "address": {
+      "title": "العنوان",
+      "text": "أول شارع المعهد الديني من الطريق الزراعي أمام ميدان الإمام محمد عبده، برج الشريف الدور الثالث - محافظة دمنهور",
+      "mapUrl": "https://www.google.com/maps/place/31%C2%B001'37.6%22N+30%C2%B027'06.0%22E/@31.0271875,30.4516898,17.25z/data=!4m4!3m3!8m2!3d31.027099!4d30.451676"
+    },
+    "phone": {
+      "title": "رقم الهاتف",
+      "text": "+201090006997"
+    },
+    "email": {
+      "title": "البريد الإلكتروني",
+      "text": "info@almuhandis-solar.com"
+    },
     "form": {
       "name": "الاسم",
       "email": "البريد الإلكتروني",

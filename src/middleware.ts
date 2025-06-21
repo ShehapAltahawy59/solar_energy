@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+console.log("Middleware file is being loaded");
+
 const locales = ["en", "ar"];
 const defaultLocale = "ar";
 
@@ -23,25 +25,43 @@ function getLocale(request: NextRequest): string {
 }
 
 export function middleware(request: NextRequest) {
+  console.log("==== Middleware Execution Start ====");
   const pathname = request.nextUrl.pathname;
+
+  console.log("Middleware triggered for path:", pathname);
+  console.log("Request URL:", request.url);
 
   // Check if pathname already has a locale
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return;
+  console.log("Path has locale:", pathnameHasLocale);
+
+  if (pathnameHasLocale) {
+    console.log("Pathname already has locale, returning");
+    return;
+  }
 
   // Redirect if no locale in pathname
   const locale = getLocale(request);
+  console.log("Selected locale:", locale);
+
   const newUrl = new URL(`/${locale}${pathname}`, request.url);
+  console.log("Redirecting to:", newUrl.toString());
 
   return NextResponse.redirect(newUrl);
 }
 
 export const config = {
   matcher: [
-    // Skip all internal paths (_next)
-    "/((?!_next|api|favicon.ico|.*\\..*).*)",
+    /*
+     * Match all request paths except for the ones starting with:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - images/ (public images)
+     */
+    "/((?!_next/static|_next/image|favicon.ico|images/).*)",
   ],
 };

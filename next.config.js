@@ -7,10 +7,15 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [],
+    unoptimized: process.env.NODE_ENV === "development",
   },
   experimental: {
     // Remove obsolete image config from experimental
   },
+  assetPrefix: "",
+  basePath: "",
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

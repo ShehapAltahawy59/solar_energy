@@ -94,14 +94,6 @@ export default function TestimonialsClient({
                   "{testimonial.quote}"
                 </p>
               </div>
-              {/* Professional badges with different titles */}
-              <div className="absolute top-4 right-4 lg:top-6 lg:right-6 bg-green-600/90 text-white px-2 py-1 lg:px-4 lg:py-2 rounded-full text-xs lg:text-sm font-semibold backdrop-blur-sm">
-                {index === 0
-                  ? "Lead Engineer"
-                  : index === 1
-                  ? "Senior Engineer"
-                  : "Design Engineer"}
-              </div>
             </div>
           ))}
         </div>

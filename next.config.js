@@ -8,11 +8,8 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  // Enable static image imports
   experimental: {
-    images: {
-      allowFutureImage: true,
-    },
+    // Remove obsolete image config from experimental
   },
 };
 

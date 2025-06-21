@@ -1,72 +1,99 @@
 "use client";
 
 import { useState } from "react";
-
-const faqs = [
-  {
-    question: "ما هي مميزات الطاقة الشمسية؟",
-    answer:
-      "الطاقة الشمسية نظيفة ومتجددة وتوفر الكثير من تكاليف الكهرباء. كما أنها تحافظ على البيئة وتقلل من البصمة الكربونية.",
-  },
-  {
-    question: "كم يستغرق تركيب نظام الطاقة الشمسية؟",
-    answer:
-      "يعتمد وقت التركيب على حجم المشروع. عادةً ما يستغرق من 3 إلى 7 أيام للمنازل، وقد يستغرق وقتاً أطول للمشاريع الكبيرة.",
-  },
-  {
-    question: "هل أحتاج إلى صيانة دورية للنظام؟",
-    answer:
-      "نعم، نوصي بإجراء صيانة دورية كل 6 أشهر لضمان كفاءة النظام. نقدم خدمة صيانة شاملة لجميع عملائنا.",
-  },
-  {
-    question: "ما هي مدة ضمان الألواح الشمسية؟",
-    answer:
-      "نقدم ضمان لمدة 10 سنوات على المكونات و25 سنة على إنتاجية الألواح الشمسية.",
-  },
-  {
-    question: "كيف يمكنني معرفة التكلفة المتوقعة للمشروع؟",
-    answer:
-      "نقدم استشارة مجانية وتقييم للموقع لتحديد احتياجاتك وتقديم عرض سعر مفصل يناسب ميزانيتك.",
-  },
-];
+import { useDictionary } from "@/hooks/use-dictionary";
+import { useLanguage } from "@/hooks/use-language";
 
 export default function FAQ() {
+  const { locale } = useLanguage();
+  const { dictionary, loading } = useDictionary(locale);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          الأسئلة الشائعة
-        </h2>
-        <div className="max-w-3xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="border border-gray-200 rounded-lg overflow-hidden"
-            >
-              <button
-                className="w-full text-right px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center"
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              >
-                <span className="font-medium text-lg">{faq.question}</span>
-                <span
-                  className={`transform transition-transform ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
-                >
-                  ▼
-                </span>
-              </button>
-              <div
-                className={`px-6 transition-all duration-300 ease-in-out ${
-                  openIndex === index ? "max-h-40 py-4" : "max-h-0"
-                } overflow-hidden bg-gray-50`}
-              >
-                <p className="text-gray-600">{faq.answer}</p>
-              </div>
+  if (loading || !dictionary) {
+    return (
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="h-10 bg-gray-200 animate-pulse rounded mb-4"></div>
+              <div className="h-6 bg-gray-200 animate-pulse rounded"></div>
             </div>
-          ))}
+            <div className="space-y-4">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="bg-white rounded-lg shadow-sm p-6">
+                  <div className="h-6 bg-gray-200 animate-pulse rounded mb-2"></div>
+                  <div className="h-4 bg-gray-200 animate-pulse rounded"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  const faqItems = [
+    {
+      question: dictionary.faq.questions.q1.question,
+      answer: dictionary.faq.questions.q1.answer,
+    },
+    {
+      question: dictionary.faq.questions.q2.question,
+      answer: dictionary.faq.questions.q2.answer,
+    },
+    {
+      question: dictionary.faq.questions.q3.question,
+      answer: dictionary.faq.questions.q3.answer,
+    },
+    {
+      question: dictionary.faq.questions.q4.question,
+      answer: dictionary.faq.questions.q4.answer,
+    },
+    {
+      question: dictionary.faq.questions.q5.question,
+      answer: dictionary.faq.questions.q5.answer,
+    },
+  ];
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              {dictionary.faq.title}
+            </h2>
+            <p className="text-gray-600">{dictionary.faq.subtitle}</p>
+          </div>
+          <div className="space-y-4">
+            {faqItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-sm overflow-hidden"
+              >
+                <button
+                  className="w-full px-6 py-4 text-right hover:bg-gray-50 focus:outline-none focus:bg-gray-50"
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                >
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-medium text-gray-800">
+                      {item.question}
+                    </span>
+                    <span className="text-green-600 text-xl">
+                      {openIndex === index ? "−" : "+"}
+                    </span>
+                  </div>
+                </button>
+                {openIndex === index && (
+                  <div className="px-6 pb-4">
+                    <p className="text-gray-600 text-right">{item.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

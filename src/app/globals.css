@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font families */
+.font-kufi {
+  font-family: var(--font-noto-kufi), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
 @layer utilities {
   .animate-fade-in {
     animation: fadeIn 0.5s ease-out forwards;
@@ -9,6 +18,15 @@
 
   .animate-slide-in {
     animation: slideIn 0.5s ease-out forwards;
+  }
+
+  /* RTL/LTR text alignment utilities */
+  .text-start {
+    text-align: start;
+  }
+
+  .text-end {
+    text-align: end;
   }
 }
 

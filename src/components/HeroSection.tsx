@@ -1,15 +1,17 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import animStyles from "@/app/styles_shared/animations.module.css";
 import clsx from "clsx";
+import type { Dictionary } from "../../lib/dictionaries";
 
-export default function HeroSection() {
-  const { elementRef, isVisible } = useIntersectionObserver();
+interface HeroSectionProps {
+  dict: Dictionary["hero"];
+  lang: string;
+}
 
+export default function HeroSection({ dict, lang }: HeroSectionProps) {
   return (
-    <div ref={elementRef} className="relative min-h-screen flex items-center">
+    <div className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -28,29 +30,28 @@ export default function HeroSection() {
             className={clsx(
               "text-5xl md:text-6xl font-bold text-white mb-6",
               animStyles.animated,
-              isVisible && animStyles.fadeInScale
+              animStyles.fadeInScale
             )}
           >
-            حلول الطاقة الشمسية المتكاملة
+            {dict.title}
           </h1>
 
           <p
             className={clsx(
               "text-xl text-gray-200 mb-8",
               animStyles.animated,
-              isVisible && animStyles.slideInLeft,
+              animStyles.slideInLeft,
               "delay-200"
             )}
           >
-            نقدم حلولاً مبتكرة وصديقة للبيئة لتوليد الطاقة الشمسية للمنازل
-            والشركات والمزارع
+            {dict.subtitle}
           </p>
 
           <div
             className={clsx(
-              "space-x-4 space-x-reverse",
+              lang === "ar" ? "space-x-4 space-x-reverse" : "space-x-4",
               animStyles.animated,
-              isVisible && animStyles.slideInUp,
+              animStyles.slideInUp,
               "delay-400"
             )}
           >
@@ -60,13 +61,13 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
             >
-              تواصل معنا
+              {dict.cta}
             </a>
             <Link
-              href="/projects"
+              href={`/${lang}/projects`}
               className="inline-block bg-white/10 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors"
             >
-              مشروعاتنا
+              {dict.learnMore}
             </Link>
           </div>
         </div>

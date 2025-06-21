@@ -17,11 +17,11 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
         {/* First Image */}
         <div className="relative h-full">
           <Image
-            src="/images/new_cover.jfif"
-            alt="Solar panels background"
+            src="/images/new_cover.jpg"
+            alt="Solar Energy Solutions"
             fill
-            className="object-cover object-[50%_0%]"
             priority
+            className="object-cover"
           />
         </div>
         {/* Second Image */}

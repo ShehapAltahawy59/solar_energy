@@ -93,7 +93,7 @@
         "capacity": "150 كيلو وات",
         "client": "عماد فرفور وعلاء الضبع",
         "description": "محطة طاقة شمسية للأستاذ عماد فرفور والاستاذ علاء الضبع",
-        "image": "/images/finishedPro1.jfif"
+        "image": "/images/finishedPro1.jpg"
       },
       {
         "id": 2,
@@ -102,7 +102,7 @@
         "capacity": "100 كيلو وات",
         "client": "احمد عايد - مصنع المراعي",
         "description": "محطة طاقة شمسية لمصنع الأستاذ احمد عايد (مصنع المراعي)",
-        "image": "/images/finishedPro3.jfif"
+        "image": "/images/finishedPro3.jpg"
       },
       {
         "id": 3,
@@ -110,7 +110,7 @@
         "location": "طريق وادي النطرون العلمين",
         "capacity": "90 كيلو وات",
         "description": "محطة طاقة شمسية لمزرعة نبع البركة",
-        "image": "/images/finishedPro4.jfif"
+        "image": "/images/finishedPro4.jpg"
       }
     ],
     "completed": [

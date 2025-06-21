@@ -2,7 +2,7 @@
 
 import { useState, ReactNode } from "react";
 import { LanguageProvider as LanguageContextProvider } from "../contexts/language-context";
-import type { Locale } from "../lib/dictionaries";
+import type { Locale } from "../../lib/dictionaries";
 
 interface LanguageProviderProps {
   children: ReactNode;

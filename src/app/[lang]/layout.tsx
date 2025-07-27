@@ -78,8 +78,8 @@ export default async function LangLayout({ children, params }: LayoutProps) {
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" type="image/png" href="/images/logo/re7ab.png" />
-        <link rel="apple-touch-icon" href="/images/logo/re7ab.png" />
+        <link rel="icon" type="image/png" href="/solar_energy/images/logo/re7ab.png" />
+        <link rel="apple-touch-icon" href="/solar_energy/images/logo/re7ab.png" />
       </head>
       <body
         className={clsx(

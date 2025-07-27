@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "شركة رائدة في مجال الطاقة الشمسية في مصر. نقدم حلولاً متكاملة للمنازل والشركات والمصانع.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/solar_energy/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "المهندس للطاقة الشمسية",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "المهندس للطاقة الشمسية - حلول الطاقة الشمسية في مصر",
     description:
       "شركة رائدة في مجال الطاقة الشمسية في مصر. نقدم حلولاً متكاملة للمنازل والشركات والمصانع.",
-    images: ["/images/og-image.jpg"],
+    images: ["/solar_energy/images/og-image.jpg"],
   },
   viewport: "width=device-width, initial-scale=1",
   robots: {

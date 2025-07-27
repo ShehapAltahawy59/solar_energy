@@ -17,7 +17,7 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
         {/* First Image */}
         <div className="relative h-full">
           <Image
-            src="/images/new_cover.jpg"
+            src="/solar_energy/images/new_cover.jpg"
             alt="Solar Energy Solutions"
             fill
             priority
@@ -27,7 +27,7 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
         {/* Second Image */}
         <div className="relative h-full">
           <Image
-            src="/images/projects/agriculture/project_agriculture_4.jpg"
+            src="/solar_energy/images/projects/agriculture/project_agriculture_4.jpg"
             alt="Solar panels background"
             fill
             className="object-cover object-[20%_5%]"

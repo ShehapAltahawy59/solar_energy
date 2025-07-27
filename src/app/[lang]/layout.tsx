@@ -43,19 +43,19 @@ export async function generateMetadata({
     icons: {
       icon: [
         {
-          url: "/images/logo/re7ab.png",
+          url: "/solar_energy/images/logo/re7ab.png",
           sizes: "32x32",
           type: "image/png",
         },
         {
-          url: "/images/logo/re7ab.png",
+          url: "/solar_energy/images/logo/re7ab.png",
           sizes: "16x16",
           type: "image/png",
         },
       ],
       apple: [
         {
-          url: "/images/logo/re7ab.png",
+          url: "/solar_energy/images/logo/re7ab.png",
           sizes: "180x180",
           type: "image/png",
         },

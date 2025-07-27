@@ -32,17 +32,17 @@ export default function WhyUsClient({ dictionary }: WhyUsClientProps) {
 
   const visualFeatures = [
     {
-      image: "/images/equipment/control_unit.jpg",
+      image: "/solar_energy/images/equipment/control_unit.jpg",
       title: dictionary.whyUs.equipmentQuality.title,
       description: dictionary.whyUs.equipmentQuality.description,
     },
     {
-      image: "/images/team/team_group_photo.jpg",
+      image: "/solar_energy/images/team/team_group_photo.jpg",
       title: dictionary.whyUs.specializedTeam.title,
       description: dictionary.whyUs.specializedTeam.description,
     },
     {
-      image: "/images/setup/panels_setup_down_view.jpg",
+      image: "/solar_energy/images/setup/panels_setup_down_view.jpg",
       title: dictionary.whyUs.professionalInstallation.title,
       description: dictionary.whyUs.professionalInstallation.description,
     },

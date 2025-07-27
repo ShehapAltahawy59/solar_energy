@@ -8,7 +8,7 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [],
-    unoptimized: process.env.NODE_ENV === "development",
+    unoptimized: true,
   },
   experimental: {
     // Remove obsolete image config from experimental

@@ -7,6 +7,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "المشروعات | شركة الطاقة الشمسية",
     description: "تصفح مشروعاتنا الناجحة في مجال الطاقة الشمسية في مصر",
-    images: ["/images/og-projects.jpg"],
+    images: ["/solar_energy/images/og-projects.jpg"],
   },
 };

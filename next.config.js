@@ -16,7 +16,7 @@ const nextConfig = {
   output: 'export', // Add this line for Next.js 13+ static export
   trailingSlash: true, // Required for GitHub Pages
   assetPrefix: process.env.GITHUB_PAGES ? '/solar_energy/' : '',
-  basePath: process.env.GITHUB_PAGES ? '/solar_energy' : '',
+  basePath: process.env.GITHUB_PAGES ? '/solar_energy/' : '',
 };
 
 module.exports = nextConfig;

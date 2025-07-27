@@ -34,12 +34,12 @@ export async function generateMetadata({
   return {
     title:
       resolvedParams.lang === "ar"
-        ? "المهندس للطاقة الشمسية"
-        : "Al-Muhandis Solar Energy",
+        ? "الكيان للطاقة الشمسية"
+        : "Alkyan Solar Energy",
     description:
       resolvedParams.lang === "ar"
-        ? "شركة المهندس للطاقة الشمسية - حلول الطاقة المتجددة"
-        : "Al-Muhandis Solar Energy - Renewable Energy Solutions",
+        ? "شركة الكيان للطاقة الشمسية - حلول الطاقة المتجددة"
+        : "Alkyan Solar Energy - Renewable Energy Solutions",
     icons: {
       icon: [
         {

@@ -93,7 +93,7 @@
         "capacity": "150 كيلو وات",
         "client": "عماد فرفور وعلاء الضبع",
         "description": "محطة طاقة شمسية للأستاذ عماد فرفور والاستاذ علاء الضبع",
-        "image": "/images/finishedPro1.jpg"
+        "image": "/solar_energy/images/finishedPro1.jpg"
       },
       {
         "id": 2,
@@ -102,7 +102,7 @@
         "capacity": "100 كيلو وات",
         "client": "احمد عايد - مصنع المراعي",
         "description": "محطة طاقة شمسية لمصنع الأستاذ احمد عايد (مصنع المراعي)",
-        "image": "/images/finishedPro3.jpg"
+        "image": "/solar_energy/images/finishedPro3.jpg"
       },
       {
         "id": 3,
@@ -110,7 +110,7 @@
         "location": "طريق وادي النطرون العلمين",
         "capacity": "90 كيلو وات",
         "description": "محطة طاقة شمسية لمزرعة نبع البركة",
-        "image": "/images/finishedPro4.jpg"
+        "image": "/solar_energy/images/finishedPro4.jpg"
       }
     ],
     "completed": [
@@ -121,7 +121,7 @@
         "capacity": "125 حصان",
         "client": "العمدة بسيوني",
         "description": "محطة بجوار الوطنية للدواجن للعمدة بسيوني",
-        "image": "/images/projects/agriculture/project_agriculture_2.jpg"
+        "image": "/solar_energy/images/projects/agriculture/project_agriculture_2.jpg"
       },
       {
         "id": 5,
@@ -130,7 +130,7 @@
         "capacity": "107 كيلو وات",
         "client": "عاشور الديب",
         "description": "محطة طاقة شمسية للأستاذ عاشور الديب",
-        "image": "/images/projects/agriculture/project_agriculture_3.jpg"
+        "image": "/solar_energy/images/projects/agriculture/project_agriculture_3.jpg"
       },
       {
         "id": 6,
@@ -139,7 +139,7 @@
         "capacity": "60 كيلو وات",
         "client": "احمد عبد الرحمن - شركة القائد",
         "description": "محطة طاقة شمسية للأستاذ احمد عبد الرحمن (شركة القائد)",
-        "image": "/images/projects/agriculture/project_agriculture_4.jpg"
+        "image": "/solar_energy/images/projects/agriculture/project_agriculture_4.jpg"
       },
       {
         "id": 7,
@@ -148,7 +148,7 @@
         "capacity": "50 كيلو وات",
         "client": "طارق البلتاجي",
         "description": "محطة طاقة شمسية للأستاذ طارق البلتاجي",
-        "image": "/images/projects/agriculture/project_agriculture_5.jpg"
+        "image": "/solar_energy/images/projects/agriculture/project_agriculture_5.jpg"
       },
       {
         "id": 8,
@@ -157,7 +157,7 @@
         "capacity": "180 كيلو وات",
         "type": "متحركة",
         "description": "محطة طاقة شمسية متحركة",
-        "image": "/images/projects/wells/project_well_1.jpg"
+        "image": "/solar_energy/images/projects/wells/project_well_1.jpg"
       },
       {
         "id": 9,
@@ -167,7 +167,7 @@
         "client": "حسن عبد العليم",
         "type": "متحركة",
         "description": "محطة طاقة شمسية متحركة للأستاذ حسن عبد العليم",
-        "image": "/images/projects/wells/project_well_3_front_view.jpg"
+        "image": "/solar_energy/images/projects/wells/project_well_3_front_view.jpg"
       },
       {
         "id": 10,
@@ -175,7 +175,7 @@
         "location": "سيناء - بئر العبد",
         "client": "سيد الشبراوي",
         "description": "محطة طاقة شمسية للأستاذ سيد الشبراوي",
-        "image": "/images/projects/wells/project_well_4.jpg"
+        "image": "/solar_energy/images/projects/wells/project_well_4.jpg"
       },
       {
         "id": 11,
@@ -183,7 +183,7 @@
         "location": "مطروح",
         "client": "عطيوة الفقي",
         "description": "محطة طاقة شمسية للأستاذ عطيوة الفقي",
-        "image": "/images/projects/residential/project_residential_2.jpg"
+        "image": "/solar_energy/images/projects/residential/project_residential_2.jpg"
       }
     ]
   },

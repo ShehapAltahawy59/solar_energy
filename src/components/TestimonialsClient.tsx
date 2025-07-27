@@ -20,19 +20,19 @@ export default function TestimonialsClient({
       name: dictionary.testimonials.engineers.ahmed.name,
       role: dictionary.testimonials.engineers.ahmed.role,
       quote: dictionary.testimonials.engineers.ahmed.quote,
-      image: "/images/team/enginerr_during_setup_2.jpg",
+      image: "/solar_energy/images/team/enginerr_during_setup_2.jpg",
     },
     {
       name: dictionary.testimonials.engineers.mohamed.name,
       role: dictionary.testimonials.engineers.mohamed.role,
       quote: dictionary.testimonials.engineers.mohamed.quote,
-      image: "/images/team/enginerr_during_setup_3.jpg",
+      image: "/solar_energy/images/team/enginerr_during_setup_3.jpg",
     },
     {
       name: dictionary.testimonials.engineers.omar.name,
       role: dictionary.testimonials.engineers.omar.role,
       quote: dictionary.testimonials.engineers.omar.quote,
-      image: "/images/team/enginerr_during_setup_4.jpg",
+      image: "/solar_energy/images/team/enginerr_during_setup_4.jpg",
     },
   ];
 

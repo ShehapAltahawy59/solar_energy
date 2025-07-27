@@ -10,6 +10,13 @@ interface PageProps {
   params: Promise<{ lang: Locale }>;
 }
 
+export function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'ar' }
+  ];
+}
+
 export default async function ProjectsPage({ params }: PageProps) {
   const resolvedParams = await params;
   const dict = await getDictionary(resolvedParams.lang);

@@ -32,7 +32,7 @@ export default function TestimonialsClient({
       name: dictionary.testimonials.engineers.omar.name,
       role: dictionary.testimonials.engineers.omar.role,
       quote: dictionary.testimonials.engineers.omar.quote,
-      image: "/images/team/ibrahem.jpg.jpg",
+      image: "/images/team/ibrahem.jpg",
     },
   ];
 

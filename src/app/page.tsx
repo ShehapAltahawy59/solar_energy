@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace('/en');
+    router.replace('/ar');
   }, [router]);
 
   // Show loading state while redirecting

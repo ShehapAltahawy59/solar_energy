@@ -88,11 +88,12 @@
     "showcase": [
       {
         "id": 1,
-        "title": "Abu Hamad Solar Station",
-        "capacity": "1.5 kW",
-        "location": "Al-Abbasa Land",
-        "client": "Amr Mohamed El-Sayed",
-        "image": "/images/projects/agriculture/abohammad.jpg",
+        "title": "El-Maghra Station",
+        "capacity": "25 kW",
+        "location": "El-Maghra",
+        "client": "Tarek Awad",
+        "image": "/images/projects/agriculture/mogra.jpg",
+        
         "description": ""
       },
       {
@@ -106,12 +107,13 @@
       },
       {
         "id": 3,
-        "title": "Off-Grid Solar Station in Ras Sedr",
-        "location": "Ras Sedr City",
-        "capacity": "1.5 kW",
-        "client": "Engineer Salah",
-        "image": "/images/projects/agriculture/ras_serrd_off.jpg",
-        "description": ""
+        "title": "Solar Station in El-Wahat",
+        "location": "El-Wahat",
+        "capacity": "60 kW",
+        "client": "Islam Mohamed",
+        "description": "",
+        "image": "/images/projects/agriculture/wha7at.jpeg"
+       
       }
     ],
     "completed": [
@@ -126,11 +128,12 @@
       },
       {
         "id": 5,
-        "title": "El-Maghra Station",
-        "capacity": "25 kW",
-        "location": "El-Maghra",
-        "client": "Tarek Awad",
-        "image": "/images/projects/agriculture/mogra.jpg",
+        "title": "Abu Hamad Solar Station",
+        "capacity": "1.5 kW",
+        "location": "Al-Abbasa Land",
+        "client": "Amr Mohamed El-Sayed",
+        "image": "/images/projects/agriculture/abohammad.jpg",
+        
         "description": ""
       },
       {
@@ -144,12 +147,13 @@
       },
       {
         "id": 7,
-        "title": "Solar Station in El-Wahat",
-        "location": "El-Wahat",
-        "capacity": "60 kW",
-        "client": "Islam Mohamed",
-        "description": "",
-        "image": "/images/projects/agriculture/wha7at.jpeg"
+        "title": "Off-Grid Solar Station in Ras Sedr",
+        "location": "Ras Sedr City",
+        "capacity": "1.5 kW",
+        "client": "Engineer Salah",
+        "image": "/images/projects/agriculture/ras_serrd_off.jpg",
+        "description": ""
+        
       },
       {
         "id": 8,

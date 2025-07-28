@@ -24,13 +24,16 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        env:
-          GITHUB_PAGES: true   # 👈 IMPORTANT
-        run: npm run build
-        
+        run: npm run build && npm run export
+
+      - name: Ensure CNAME exists
+        run: echo "alkyansolar.com" > out/CNAME
 
       - name: Add SPA fallback
-        run: cp ./out/index.html ./out/404.html
+        run: |
+          cp ./out/index.html ./out/404.html
+          # For multi-language support
+          cp ./out/en/index.html ./out/en/404.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

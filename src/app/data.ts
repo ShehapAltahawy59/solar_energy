@@ -46,7 +46,7 @@ export const completedProjects = [
     title: "محطة الروابي الخضر",
     capacity: "50 كيلو وات",
     location: "منطقه الروابي الخضر بالبحيره",
-    client: "طارق البلتاجي",
+    client: " طارق البلتاجي",
   },
   {
     title: "مصنع المراعي",

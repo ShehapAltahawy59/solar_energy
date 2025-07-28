@@ -15,7 +15,7 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
       {/* Single Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/new_cover.jpg"
+          src="/images/new_cover3.jpg"
           alt="Solar Energy Solutions"
           fill
           priority

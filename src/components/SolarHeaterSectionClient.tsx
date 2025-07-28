@@ -100,7 +100,7 @@ export default function SolarHeaterSectionClient({
           >
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg group">
               <Image
-                src="/solar_energy/images/equipment/panels_cloese_view.jpg"
+                src="/images/equipment/panels_cloese_view.jpg"
                 alt={dictionary.solarSystem.title}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"

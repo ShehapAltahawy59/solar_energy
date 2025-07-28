@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "المهندس للطاقة الشمسية - حلول الطاقة الشمسية في مصر",
+  title: "الكيان للطاقة الشمسية - حلول الطاقة الشمسية في مصر",
   description:
     "شركة رائدة في مجال الطاقة الشمسية في مصر. نقدم حلولاً متكاملة للمنازل والشركات والمصانع. وفر في فاتورة الكهرباء واحمِ البيئة.",
   keywords: [
@@ -15,30 +15,30 @@ export const metadata: Metadata = {
     "مصر",
     "القاهرة",
   ],
-  authors: [{ name: "المهندس للطاقة الشمسية" }],
+  authors: [{ name: "الكيان للطاقة الشمسية" }],
   openGraph: {
     type: "website",
     locale: "ar_EG",
     url: "https://greentrack.eg",
-    siteName: "المهندس للطاقة الشمسية",
-    title: "المهندس للطاقة الشمسية - حلول الطاقة الشمسية في مصر",
+    siteName: "الكيان للطاقة الشمسية",
+    title: "الكيان للطاقة الشمسية - حلول الطاقة الشمسية في مصر",
     description:
       "شركة رائدة في مجال الطاقة الشمسية في مصر. نقدم حلولاً متكاملة للمنازل والشركات والمصانع.",
     images: [
       {
-        url: "/solar_energy/images/og-image.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "المهندس للطاقة الشمسية",
+        alt: "الكيان للطاقة الشمسية",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "المهندس للطاقة الشمسية - حلول الطاقة الشمسية في مصر",
+    title: "الكيان للطاقة الشمسية - حلول الطاقة الشمسية في مصر",
     description:
       "شركة رائدة في مجال الطاقة الشمسية في مصر. نقدم حلولاً متكاملة للمنازل والشركات والمصانع.",
-    images: ["/solar_energy/images/og-image.jpg"],
+    images: ["/images/og-image.jpg"],
   },
   viewport: "width=device-width, initial-scale=1",
   robots: {

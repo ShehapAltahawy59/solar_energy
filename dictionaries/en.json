@@ -93,7 +93,7 @@
         "capacity": "150 kW",
         "client": "Emad Farfour and Alaa El-Daba",
         "description": "Solar power station for Mr. Emad Farfour and Mr. Alaa El-Daba",
-        "image": "/solar_energy/images/finishedPro1.jpg"
+        "image": "/images/finishedPro1.jpg"
       },
       {
         "id": 2,
@@ -102,7 +102,7 @@
         "capacity": "100 kW",
         "client": "Ahmed Ayed - Al-Marai Factory",
         "description": "Solar power station for Mr. Ahmed Ayed (Al-Marai Factory)",
-        "image": "/solar_energy/images/finishedPro3.jpg"
+        "image": "/images/finishedPro3.jpg"
       },
       {
         "id": 3,
@@ -110,7 +110,7 @@
         "location": "Wadi El-Natrun - El-Alamein Road",
         "capacity": "90 kW",
         "description": "Solar power station for Naba Al-Baraka Farm",
-        "image": "/solar_energy/images/finishedPro4.jpg"
+        "image": "/images/finishedPro4.jpg"
       }
     ],
     "completed": [
@@ -121,7 +121,7 @@
         "capacity": "125 HP",
         "client": "Mayor Bassiouni",
         "description": "Station next to Al-Watania Poultry for Mayor Bassiouni",
-        "image": "/solar_energy/images/projects/agriculture/project_agriculture_2.jpg"
+        "image": "/images/projects/agriculture/project_agriculture_2.jpg"
       },
       {
         "id": 5,
@@ -130,7 +130,7 @@
         "capacity": "107 kW",
         "client": "Ashour El-Deeb",
         "description": "Solar power station for Mr. Ashour El-Deeb",
-        "image": "/solar_energy/images/projects/agriculture/project_agriculture_3.jpg"
+        "image": "/images/projects/agriculture/project_agriculture_3.jpg"
       },
       {
         "id": 6,
@@ -139,7 +139,7 @@
         "capacity": "60 kW",
         "client": "Ahmed Abdel Rahman - Al-Qaid Company",
         "description": "Solar power station for Mr. Ahmed Abdel Rahman (Al-Qaid Company)",
-        "image": "/solar_energy/images/projects/agriculture/project_agriculture_4.jpg"
+        "image": "/images/projects/agriculture/project_agriculture_4.jpg"
       },
       {
         "id": 7,
@@ -148,7 +148,7 @@
         "capacity": "50 kW",
         "client": "Tarek El-Baltagi",
         "description": "Solar power station for Mr. Tarek El-Baltagi",
-        "image": "/solar_energy/images/projects/agriculture/project_agriculture_5.jpg"
+        "image": "/images/projects/agriculture/project_agriculture_5.jpg"
       },
       {
         "id": 8,
@@ -157,7 +157,7 @@
         "capacity": "180 kW",
         "type": "Mobile",
         "description": "Mobile solar power station",
-        "image": "/solar_energy/images/projects/wells/project_well_1.jpg"
+        "image": "/images/projects/wells/project_well_1.jpg"
       },
       {
         "id": 9,
@@ -167,7 +167,7 @@
         "client": "Hassan Abdel Aleem",
         "type": "Mobile",
         "description": "Mobile solar power station for Mr. Hassan Abdel Aleem",
-        "image": "/solar_energy/images/projects/wells/project_well_3_front_view.jpg"
+        "image": "/images/projects/wells/project_well_3_front_view.jpg"
       },
       {
         "id": 10,
@@ -175,7 +175,7 @@
         "location": "Sinai - Bir Al-Abd",
         "client": "Sayed El-Shabrawi",
         "description": "Solar power station for Mr. Sayed El-Shabrawi",
-        "image": "/solar_energy/images/projects/wells/project_well_4.jpg"
+        "image": "/images/projects/wells/project_well_4.jpg"
       },
       {
         "id": 11,
@@ -183,7 +183,7 @@
         "location": "Matrouh",
         "client": "Ateywa El-Faqi",
         "description": "Solar power station for Mr. Ateywa El-Faqi",
-        "image": "/solar_energy/images/projects/residential/project_residential_2.jpg"
+        "image": "/images/projects/residential/project_residential_2.jpg"
       }
     ]
   },

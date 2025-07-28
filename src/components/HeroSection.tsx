@@ -65,7 +65,7 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
             )}
           >
             <a
-              href="https://wa.me/201090006997"
+              href="https://wa.me/201064911198"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"

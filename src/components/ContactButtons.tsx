@@ -5,7 +5,7 @@ import { useLanguage } from "@/hooks/use-language";
 export default function ContactButtons() {
   const { locale } = useLanguage();
   const openWhatsApp = () => {
-    window.open(`https://wa.me/201090006997`, "_blank");
+    window.open(`https://wa.me/201064911198`, "_blank");
   };
 
   return (

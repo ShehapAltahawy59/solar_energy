@@ -88,11 +88,12 @@
     "showcase": [
       {
         "id": 1,
-        "title": "محطة بابوحماد الشرقيه",
-        "capacity": "1.5 كيلو وات",
-        "location": "ارض العباسه",
-        "client": "عمرو محمد السيد",
-        "image": "/images/projects/agriculture/abohammad.jpg",
+        "title": "محطة بالمغره",
+        "capacity": "25 كيلو وات",
+        "location": "المغره",
+        "client": " طارق عوض",
+        "image": "/images/projects/agriculture/mogra.jpg",
+       
         "description": ""
       },
       {
@@ -107,12 +108,14 @@
       },
       {
         "id": 3,
-        "title": "محطة طاقة شمسية اوف جريد في راس صدر",
-        "location": "مدينة راس صدر",
-        "capacity": "1.5 كيلو وات",
-        "client": "المهندس صلاح",
-        "image": "/images/projects/agriculture/ras_serrd_off.jpg",
-        "description": ""
+        "title": "محطة طاقة شمسية في الواحات",
+        "location": "الواحات",
+        "capacity": "60 كيلو وات",
+        "client": "اسلام محمد",
+        "description": "",
+        
+        "image": "/images/projects/agriculture/wha7at.jpeg"
+        
       }
     ],
     "completed": [
@@ -128,11 +131,11 @@
       },
       {
         "id": 5,
-        "title": "محطة بالمغره",
-        "capacity": "25 كيلو وات",
-        "location": "المغره",
-        "client": " طارق عوض",
-        "image": "/images/projects/agriculture/mogra.jpg",
+        "title": "محطة بابوحماد الشرقيه",
+        "capacity": "1.5 كيلو وات",
+        "location": "ارض العباسه",
+        "client": "عمرو محمد السيد",
+        "image": "/images/projects/agriculture/abohammad.jpg",
         
         "description": ""
       },
@@ -148,13 +151,13 @@
       },
       {
         "id": 7,
-        "title": "محطة طاقة شمسية في الواحات",
-        "location": "الواحات",
-        "capacity": "60 كيلو وات",
-        "client": "اسلام محمد",
-        "description": "",
+        "title": "محطة طاقة شمسية اوف جريد في راس صدر",
+        "location": "مدينة راس صدر",
+        "capacity": "1.5 كيلو وات",
+        "client": "المهندس صلاح",
+        "image": "/images/projects/agriculture/ras_serrd_off.jpg",
+        "description": ""
         
-        "image": "/images/projects/agriculture/wha7at.jpeg"
       },
       {
         "id": 8,

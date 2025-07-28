@@ -27,7 +27,7 @@ export default function ContactButtons() {
               clipRule="evenodd"
             />
           </svg>
-          <span className="font-semibold text-sm">01065690807</span>
+          <span className="font-semibold text-sm">01064911198</span>
         </span>
       </a>
 

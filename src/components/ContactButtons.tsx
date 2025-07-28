@@ -13,7 +13,7 @@ export default function ContactButtons() {
       className="fixed left-4 top-[80%] -translate-y-1/2 z-30 flex flex-col gap-4"
       dir="ltr"
     >
-      <a href="tel:01065690807" className="group flex items-center">
+      <a href="tel:01064911198" className="group flex items-center">
         <span className="bg-green-600 text-white py-2 px-3 rounded-lg shadow-lg flex items-center gap-2 transform transition-transform duration-300 group-hover:-translate-x-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -11,7 +11,7 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    // Remove obsolete image config from experimental
+    missingSuspenseWithCSRBailout: false,
   },
   output: 'export', // Add this line for Next.js 13+ static export
   trailingSlash: true, // Required for GitHub Pages

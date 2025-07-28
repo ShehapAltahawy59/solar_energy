@@ -5,38 +5,30 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build static site
-        run: npm run build && npm run export
-
-      - name: Ensure CNAME exists
-        run: echo "alkyansolar.com" > out/CNAME
-
-      - name: Add SPA fallback
+          
+      - run: npm ci
+      
+      - run: npm run build
+      
+      - name: Create CNAME
+        run: echo "alkyansolar.com" > ./out/CNAME
+      
+      - name: Setup 404 pages
         run: |
           cp ./out/index.html ./out/404.html
-          # For multi-language support
           cp ./out/en/index.html ./out/en/404.html
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+          cp ./out/ar/index.html ./out/ar/404.html
+      
+      - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out

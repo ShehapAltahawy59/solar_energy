@@ -25,10 +25,10 @@ jobs:
 
       - name: Build static site
         env:
-          GITHUB_PAGES: true
+          GITHUB_PAGES: true   # 👈 IMPORTANT
         run: npm run build
 
-      - name: Add 404.html fallback for SPA routing
+      - name: Add SPA fallback
         run: cp ./out/index.html ./out/404.html
 
       - name: Deploy to GitHub Pages

@@ -127,6 +127,7 @@
         "description": ""
       },
       {
+        "id": 5,
         "title": "محطة بالمغره",
         "capacity": "25 كيلو وات",
         "location": "المغره",
@@ -179,7 +180,7 @@
         "title": "سخان شمسي ",
         "location": "الزقازيق",
         "client": "الشيخ/الطاروطي",
-        
+        "capacity": "N/A",
         "description": " سخان شمسي للشيخ عبد الفتاح الطاروطي",
         "image": "/images/projects/residential/sakan.jpg"
       }

@@ -27,8 +27,7 @@ jobs:
         env:
           GITHUB_PAGES: true   # 👈 IMPORTANT
         run: npm run build
-      - name: Add SPA fallback for Next.js
-        run: cp ./out/index.html ./out/404.html
+        
 
       - name: Add SPA fallback
         run: cp ./out/index.html ./out/404.html

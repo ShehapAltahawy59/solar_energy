@@ -128,7 +128,7 @@ export default async function ProjectsPage({ params }: PageProps) {
             )}
           >
             <h3 className="text-2xl md:text-3xl font-bold text-green-600">
-              +120
+              +48
             </h3>
             <p className="mt-2 text-sm md:text-base text-gray-600">
               {dict.projects.stats.projects}
@@ -143,7 +143,7 @@ export default async function ProjectsPage({ params }: PageProps) {
             )}
           >
             <h3 className="text-2xl md:text-3xl font-bold text-green-600">
-              45
+              120
             </h3>
             <p className="mt-2 text-sm md:text-base text-gray-600">
               {dict.projects.stats.capacity}

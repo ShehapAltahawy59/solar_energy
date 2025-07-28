@@ -42,7 +42,7 @@ export default function WhyUsClient({ dictionary }: WhyUsClientProps) {
       description: dictionary.whyUs.specializedTeam.description,
     },
     {
-      image: "/images/setup/panels_setup_down_view.jpg",
+      image: "/images/setup/panels_setup_down.jpg",
       title: dictionary.whyUs.professionalInstallation.title,
       description: dictionary.whyUs.professionalInstallation.description,
     },

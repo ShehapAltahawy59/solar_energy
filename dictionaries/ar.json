@@ -123,7 +123,7 @@
         "location": "طريق ديرب نجم المنصوره",
         "client": "احمد منصور",
         "image": "/images/projects/agriculture/negm.jpeg",
-        "type": "",
+        
         "description": ""
       },
       {
@@ -132,7 +132,7 @@
         "location": "المغره",
         "client": " طارق عوض",
         "image": "/images/projects/agriculture/mogra.jpg",
-        "type": "",
+        
         "description": ""
       },
       {
@@ -142,7 +142,7 @@
         "capacity": "5 كيلو وات",
         "client": "أ/ كريم محمد",
         "description": "",
-        "type": "",
+        
         "image": "/images/projects/agriculture/awladsaqr.jpg"
       },
       {
@@ -152,7 +152,7 @@
         "capacity": "60 كيلو وات",
         "client": "اسلام محمد",
         "description": "",
-        "type": "",
+        
         "image": "/images/projects/agriculture/wha7at.jpeg"
       },
       {
@@ -179,7 +179,7 @@
         "title": "سخان شمسي ",
         "location": "الزقازيق",
         "client": "الشيخ/الطاروطي",
-        "type": "",
+        
         "description": " سخان شمسي للشيخ عبد الفتاح الطاروطي",
         "image": "/images/projects/residential/sakan.jpg"
       }

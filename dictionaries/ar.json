@@ -88,109 +88,99 @@
     "showcase": [
       {
         "id": 1,
-        "title": "محطة طاقة شمسية في الفرافرة",
-        "location": "الفرافرة",
-        "capacity": "150 كيلو وات",
-        "client": "عماد فرفور وعلاء الضبع",
-        "description": "محطة طاقة شمسية للأستاذ عماد فرفور والاستاذ علاء الضبع",
-        "image": "/images/finishedPro1.jpg"
+        "title": "محطة بابوحماد الشرقيه",
+        "capacity": "1.5 كيلو وات",
+        "location": "ارض العباسه",
+        "client": "عمرو محمد السيد",
+        "image": "/images/projects/agriculture/abohammad.jpg",
+        "description": ""
       },
       {
         "id": 2,
-        "title": "محطة طاقة شمسية لمصنع المراعي",
-        "location": "طريق مصر اسكندرية الزراعي - محافظة الغربية",
-        "capacity": "100 كيلو وات",
-        "client": "احمد عايد - مصنع المراعي",
-        "description": "محطة طاقة شمسية لمصنع الأستاذ احمد عايد (مصنع المراعي)",
-        "image": "/images/finishedPro3.jpg"
+        "title": "محطة مزرعه رأس صدر",
+        "capacity": "10 حصان",
+        "location": "طريق شرم الشيخ",
+        "client": " المهندس صلاح",
+        "image": "/images/projects/agriculture/rassedr.jpg",
+        "description": ""
+        
       },
       {
         "id": 3,
-        "title": "محطة طاقة شمسية - مزرعة نبع البركة",
-        "location": "طريق وادي النطرون العلمين",
-        "capacity": "90 كيلو وات",
-        "description": "محطة طاقة شمسية لمزرعة نبع البركة",
-        "image": "/images/finishedPro4.jpg"
+        "title": "محطةاوف جريد براس صدر",
+        "capacity": "1.5 كيلو وات",
+        "location": "طريق شرم الشيخ",
+        "client": "المهندس صلاح",
+        "image": "/images/projects/agriculture/ras_serrd_off.jpg",
+        "description": ""
       }
     ],
     "completed": [
       {
         "id": 4,
-        "title": "محطة طاقة شمسية للدواجن",
-        "location": "امتداد طريق ابناء الغربية",
-        "capacity": "125 حصان",
-        "client": "العمدة بسيوني",
-        "description": "محطة بجوار الوطنية للدواجن للعمدة بسيوني",
-        "image": "/images/projects/agriculture/project_agriculture_2.jpg"
+        "title": "محطة ديرب نجم",
+        "capacity": "7.5 كيلو وات",
+        "location": "طريق ديرب نجم المنصوره",
+        "client": "احمد منصور",
+        "image": "/images/projects/agriculture/negm.jpeg"
       },
       {
-        "id": 5,
-        "title": "محطة طاقة شمسية في الضبعة",
-        "location": "الضبعة",
-        "capacity": "107 كيلو وات",
-        "client": "عاشور الديب",
-        "description": "محطة طاقة شمسية للأستاذ عاشور الديب",
-        "image": "/images/projects/agriculture/project_agriculture_3.jpg"
+        "title": "محطة بالمغره",
+        "capacity": "25 كيلو وات",
+        "location": "المغره",
+        "client": " طارق عوض",
+        "image": "/images/projects/agriculture/mogra.jpg",
+        "description": ""
       },
       {
         "id": 6,
-        "title": "محطة طاقة شمسية في العلمين",
-        "location": "مدخل شجاعة طريق العلمين",
-        "capacity": "60 كيلو وات",
-        "client": "احمد عبد الرحمن - شركة القائد",
-        "description": "محطة طاقة شمسية للأستاذ احمد عبد الرحمن (شركة القائد)",
-        "image": "/images/projects/agriculture/project_agriculture_4.jpg"
+        "title": "محطة طاقة شمسية في اولاد صقر",
+        "location": "مركز اولاد صقر",
+        "capacity": "5 كيلو وات",
+        "client": "أ/ كريم محمد",
+        "description": "",
+        "image": "/images/projects/agriculture/awladsaqr.jpg"
       },
       {
         "id": 7,
-        "title": "محطة طاقة شمسية في البحيرة",
-        "location": "منطقة الروابي الخضر - البحيرة",
-        "capacity": "50 كيلو وات",
-        "client": "طارق البلتاجي",
-        "description": "محطة طاقة شمسية للأستاذ طارق البلتاجي",
-        "image": "/images/projects/agriculture/project_agriculture_5.jpg"
+        "title": "محطة طاقة شمسية في الواحات",
+        "location": "الواحات",
+        "capacity": "60 كيلو وات",
+        "client": "اسلام محمد",
+        "description": "",
+        "image": "/images/projects/agriculture/wha7at.jpeg"
       },
       {
         "id": 8,
-        "title": "محطة طاقة شمسية متحركة",
-        "location": "مدينة السادات - محافظة المنوفية",
-        "capacity": "180 كيلو وات",
-        "type": "متحركة",
-        "description": "محطة طاقة شمسية متحركة",
-        "image": "/images/projects/wells/project_well_1.jpg"
+        "title": "محطة طاقة شمسية بابوحماد",
+        "location": "ابوحماد محافظه الشرقيه",
+        "capacity": "7.5 كيلو وات",
+        "description": "",
+        "image": "/images/projects/agriculture/abohammad7.5.jpg"
       },
       {
         "id": 9,
-        "title": "محطة طاقة شمسية متحركة في العلمين",
-        "location": "مدينة العلمين",
-        "capacity": "25 كيلو وات",
-        "client": "حسن عبد العليم",
-        "type": "متحركة",
-        "description": "محطة طاقة شمسية متحركة للأستاذ حسن عبد العليم",
-        "image": "/images/projects/wells/project_well_3_front_view.jpg"
+        "title": "محطة طاقة شمسية اوف جريد في راس صدر",
+        "location": "مدينة راس صدر",
+        "capacity": "1.5 كيلو وات",
+        "client": "المهندس صلاح",
+        "description": "",
+        "image": "/images/projects/agriculture/rassedr1.5.jpg"
       },
       {
         "id": 10,
-        "title": "محطة طاقة شمسية في سيناء",
-        "location": "سيناء - بئر العبد",
-        "client": "سيد الشبراوي",
-        "description": "محطة طاقة شمسية للأستاذ سيد الشبراوي",
-        "image": "/images/projects/wells/project_well_4.jpg"
-      },
-      {
-        "id": 11,
-        "title": "محطة طاقة شمسية في مطروح",
-        "location": "مطروح",
-        "client": "عطيوة الفقي",
-        "description": "محطة طاقة شمسية للأستاذ عطيوة الفقي",
-        "image": "/images/projects/residential/project_residential_2.jpg"
+        "title": "سخان شمسي ",
+        "location": "الزقازيق",
+        "client": "الشيخ/الطاروطي",
+        "description": " سخان شمسي للشيخ عبد الفتاح الطاروطي",
+        "image": "/images/projects/residential/sakan.jpg"
       }
     ]
   },
   "whyUs": {
     "title": "لماذا تختار الكيان للطاقة الشمسية؟",
-    "subtitle": "نحن نقدم حلولاً متكاملة ومبتكرة في مجال الطaقة الشمسية",
-    "establishedInfo": "تأسست عام 2015 - س.ت: 100450 - ب.ض: 814-710-763",
+    "subtitle": "نحن نقدم حلولاً متكاملة ومبتكرة في مجال الطاقة الشمسية",
+    "establishedInfo": "تأسست عام 2017 - س.ت: 100450 - ب.ض: 814-710-763",
     "features": {
       "title": "مميزاتنا"
     },
@@ -236,17 +226,17 @@
     "subtitle": "نفخر بفريقنا المحترف والمتخصص",
     "engineers": {
       "ahmed": {
-        "name": "م. أحمد محمد",
+        "name": "م. مصطفي الطحاوي",
         "role": "مدير مشروع",
         "quote": "نفخر بتقديم أفضل الحلول المستدامة للطاقة الشمسية لعملائنا. نجاحنا يكمن في رضا عملائنا وثقتهم بنا."
       },
       "mohamed": {
-        "name": "م. محمد علي",
+        "name": "م. محمود ابراهيم",
         "role": "مهندس تركيبات",
         "quote": "نحرص على تنفيذ المشاريع بأعلى معايير الجودة والسلامة، مع الالتزام بالمواعيد المحددة."
       },
       "omar": {
-        "name": "م. عمر خالد",
+        "name": "م. ابراهيم حماده",
         "role": "مهندس تصميم",
         "quote": "نصمم أنظمة الطاقة الشمسية بعناية فائقة لتلبي احتياجات كل عميل وتحقق أقصى كفاءة ممكنة."
       }

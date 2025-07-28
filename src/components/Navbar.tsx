@@ -161,7 +161,7 @@ export default function Navbar() {
           <Link href={`/${locale}`} className="flex items-center gap-2">
             <div className="relative w-16 h-16 md:w-12 md:h-12 rounded-full overflow-hidden bg-white shadow-md">
               <Image
-                src="/images/logo/re7ab.png"
+                src="/images/logo/logo.png"
                 alt={dictionary.footer.companyName}
                 fill
                 className="object-contain p-1"

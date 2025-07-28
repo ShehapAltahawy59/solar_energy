@@ -43,19 +43,19 @@ export async function generateMetadata({
     icons: {
       icon: [
         {
-          url: "/images/logo/re7ab.png",
+          url: "/images/logo/logo.png",
           sizes: "32x32",
           type: "image/png",
         },
         {
-          url: "/images/logo/re7ab.png",
+          url: "/images/logo/logo.png",
           sizes: "16x16",
           type: "image/png",
         },
       ],
       apple: [
         {
-          url: "/images/logo/re7ab.png",
+          url: "/images/logo/logo.png",
           sizes: "180x180",
           type: "image/png",
         },
@@ -78,8 +78,8 @@ export default async function LangLayout({ children, params }: LayoutProps) {
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" type="image/png" href="/images/logo/re7ab.png" />
-        <link rel="apple-touch-icon" href="/images/logo/re7ab.png" />
+        <link rel="icon" type="image/png" href="/images/logo/logo.png" />
+        <link rel="apple-touch-icon" href="/images/logo/logo.png" />
       </head>
       <body
         className={clsx(

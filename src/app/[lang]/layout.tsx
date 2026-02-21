@@ -1,24 +1,8 @@
 import { Metadata } from "next";
-import { Noto_Kufi_Arabic, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { LanguageProvider } from "@/components/language-provider";
+import { LocaleSync } from "@/components/locale-sync";
 import { getDictionary, type Locale } from "../../../lib/dictionaries";
-import clsx from "clsx";
-import "../globals.css";
-
-// Arabic font
-const notoKufiArabic = Noto_Kufi_Arabic({
-  subsets: ["arabic"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-noto-kufi",
-});
-
-// English font
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-inter",
-});
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -29,7 +13,6 @@ export async function generateMetadata({
   params,
 }: LayoutProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.lang);
 
   return {
     title:
@@ -66,38 +49,15 @@ export async function generateMetadata({
 
 export default async function LangLayout({ children, params }: LayoutProps) {
   const resolvedParams = await params;
-  const isRTL = resolvedParams.lang === "ar";
-  const fontClass = isRTL ? notoKufiArabic.variable : inter.variable;
-  const fontFamily = isRTL ? "font-kufi" : "font-inter";
+  const dict = await getDictionary(resolvedParams.lang);
 
   return (
-    <html
-      lang={resolvedParams.lang}
-      dir={isRTL ? "rtl" : "ltr"}
-      className="overflow-x-hidden w-full"
-      suppressHydrationWarning
-    >
-      <head>
-        <link rel="icon" type="image/png" href="/images/logo/logo.png" />
-        <link rel="apple-touch-icon" href="/images/logo/logo.png" />
-      </head>
-      <body
-        className={clsx(
-          fontClass,
-          fontFamily,
-          "overflow-x-hidden",
-          "w-full",
-          "relative"
-        )}
-        suppressHydrationWarning
-      >
-        <LanguageProvider initialLocale={resolvedParams.lang}>
-          <div className="flex min-h-screen flex-col w-full overflow-x-hidden">
-            <Navbar />
-            <main className="flex-1 w-full overflow-x-hidden">{children}</main>
-          </div>
-        </LanguageProvider>
-      </body>
-    </html>
+    <LanguageProvider initialLocale={resolvedParams.lang}>
+      <LocaleSync />
+      <div className="flex min-h-screen flex-col w-full overflow-x-hidden">
+        <Navbar initialDictionary={dict} />
+        <main className="flex-1 w-full overflow-x-hidden">{children}</main>
+      </div>
+    </LanguageProvider>
   );
 }

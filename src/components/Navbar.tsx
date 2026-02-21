@@ -12,11 +12,22 @@ import { LanguageSwitcher } from "./language-switcher";
 const NAVBAR_HEIGHT = 64; // h-16 = 64px
 const SCROLL_OFFSET = 20; // Additional padding
 
-export default function Navbar() {
+interface NavbarProps {
+  initialDictionary?: {
+    navigation: Record<string, string>;
+    footer: { companyName: string };
+  };
+}
+
+export default function Navbar({ initialDictionary }: NavbarProps = {}) {
   const pathname = usePathname();
   const router = useRouter();
   const { locale } = useLanguage();
-  const { dictionary, loading } = useDictionary(locale);
+  const { dictionary: clientDict, loading } = useDictionary(locale);
+
+  // Use server-passed dictionary for instant render, fallback to client fetch
+  const dictionary = initialDictionary ?? clientDict;
+  const showContent = !!dictionary && (!!initialDictionary || !loading);
 
   // ✅ All hooks MUST be called before any conditional logic
   const [activeSection, setActiveSection] = useState("hero");
@@ -24,7 +35,7 @@ export default function Navbar() {
 
   // ✅ useEffect MUST also be called before conditional return
   useEffect(() => {
-    if (loading || !dictionary) return; // Guard clause inside effect
+    if (!dictionary) return; // Guard clause inside effect
 
     const handleScroll = () => {
       // If we're on projects page, keep projects active
@@ -73,10 +84,10 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleScroll);
     };
-  }, [pathname, loading, dictionary]);
+  }, [pathname, dictionary]);
 
   // ✅ NOW we can have conditional logic after ALL hooks
-  if (loading || !dictionary) {
+  if (!showContent) {
     return (
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
         <div className="container mx-auto px-4">

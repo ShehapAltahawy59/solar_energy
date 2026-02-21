@@ -32,8 +32,6 @@ export default function ProjectsCarouselClient({
   const [currentIndex, setCurrentIndex] = useState(0);
   const { elementRef, isVisible } = useIntersectionObserver();
 
-  console.log("ProjectsCarouselClient locale:", locale); // Debug log
-
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);

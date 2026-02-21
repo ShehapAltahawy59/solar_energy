@@ -1,12 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
-console.log("Middleware file is being loaded");
-
 const locales = ["en", "ar"];
 const defaultLocale = "ar";
 
 function getLocale(request: NextRequest): string {
-  // Check if locale is in URL
   const pathname = request.nextUrl.pathname;
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
@@ -14,7 +11,6 @@ function getLocale(request: NextRequest): string {
 
   if (pathnameHasLocale) return pathname.split("/")[1];
 
-  // Check Accept-Language header
   const acceptLanguage = request.headers.get("accept-language") || "";
   const preferredLocale = acceptLanguage
     .split(",")
@@ -25,32 +21,25 @@ function getLocale(request: NextRequest): string {
 }
 
 export function middleware(request: NextRequest) {
-  console.log("==== Middleware Execution Start ====");
   const pathname = request.nextUrl.pathname;
-
-  console.log("Middleware triggered for path:", pathname);
-  console.log("Request URL:", request.url);
-
-  // Check if pathname already has a locale
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  console.log("Path has locale:", pathnameHasLocale);
-
-  if (pathnameHasLocale) {
-    console.log("Pathname already has locale, returning");
-    return;
+  if (!pathnameHasLocale) {
+    const locale = getLocale(request);
+    const newUrl = new URL(`/${locale}${pathname}`, request.url);
+    return NextResponse.redirect(newUrl);
   }
 
-  // Redirect if no locale in pathname
-  const locale = getLocale(request);
-  console.log("Selected locale:", locale);
+  // Pass locale to layout for SSR consistency (fixes hydration mismatch)
+  const locale = pathname.split("/")[1];
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-locale", locale);
 
-  const newUrl = new URL(`/${locale}${pathname}`, request.url);
-  console.log("Redirecting to:", newUrl.toString());
-
-  return NextResponse.redirect(newUrl);
+  return NextResponse.next({
+    request: { headers: requestHeaders },
+  });
 }
 
 export const config = {

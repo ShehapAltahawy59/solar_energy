@@ -1,14 +1,24 @@
+import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import WhyUs from "@/components/WhyUs";
-import FAQ from "@/components/FAQ";
-import Testimonials from "@/components/Testimonials";
-import SolarHeaterSection from "@/components/SolarHeaterSection";
-import ContactSection from "@/components/ContactSection";
 import AboutSection from "@/components/AboutSection";
 import ContactButtons from "@/components/ContactButtons";
 import { getDictionary, type Locale } from "../../../lib/dictionaries";
+
+// Lazy load below-the-fold components for faster initial load
+const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: true });
+const Testimonials = dynamic(() => import("@/components/Testimonials"), {
+  ssr: true,
+});
+const SolarHeaterSection = dynamic(
+  () => import("@/components/SolarHeaterSection"),
+  { ssr: true }
+);
+const ContactSection = dynamic(() => import("@/components/ContactSection"), {
+  ssr: true,
+});
 
 // Featured projects data is now loaded from dictionary
 
@@ -48,6 +58,7 @@ export default async function Home({ params }: PageProps) {
               client: project.client,
             }))}
             locale={resolvedParams.lang}
+            dictionary={dict}
           />
           <WhyUs locale={resolvedParams.lang} />
         </section>

@@ -1,4 +1,4 @@
-import { getDictionary, type Locale } from "../../lib/dictionaries";
+import { getDictionary, type Locale, type Dictionary } from "../../lib/dictionaries";
 import ProjectsCarouselClient from "./ProjectsCarouselClient";
 
 interface Project {
@@ -14,13 +14,15 @@ interface Project {
 interface ProjectsCarouselProps {
   projects: Project[];
   locale: Locale;
+  dictionary?: Dictionary;
 }
 
 export default async function ProjectsCarousel({
   projects,
   locale,
+  dictionary: dictProp,
 }: ProjectsCarouselProps) {
-  const dictionary = await getDictionary(locale);
+  const dictionary = dictProp ?? (await getDictionary(locale));
 
   return (
     <ProjectsCarouselClient

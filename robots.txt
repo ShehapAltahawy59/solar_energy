@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://alkyansolar.com
+Sitemap: https://alkyansolar.com/sitemap.xml

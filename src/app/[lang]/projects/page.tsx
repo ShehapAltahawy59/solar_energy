@@ -2,12 +2,32 @@ import ProjectCard from "@/components/ProjectCard";
 import clsx from "clsx";
 import animStyles from "@/app/styles_shared/animations.module.css";
 import Image from "next/image";
+import { Metadata } from "next";
 import { getDictionary, type Locale } from "../../../../lib/dictionaries";
 
 // Projects data is now loaded from dictionary
 
 interface PageProps {
   params: Promise<{ lang: Locale }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
+  const title = dict.projects.title;
+
+  return {
+    title,
+    openGraph: {
+      title,
+      images: [{ url: "/images/og-projects.jpg", width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      images: ["/images/og-projects.jpg"],
+    },
+  };
 }
 
 export function generateStaticParams() {
@@ -76,6 +96,15 @@ export default async function ProjectsPage({ params }: PageProps) {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
+                    {(project as any).image2 && (
+                      <Image
+                        src={(project as any).image2}
+                        alt={project.title}
+                        fill
+                        className="object-cover animate-crossfade transition-transform duration-500 group-hover:scale-110"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    )}
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
                   </div>
                   <div className="p-4 md:p-6 transform transition-transform duration-500 group-hover:translate-x-1">

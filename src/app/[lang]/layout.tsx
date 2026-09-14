@@ -13,32 +13,49 @@ export async function generateMetadata({
   params,
 }: LayoutProps): Promise<Metadata> {
   const resolvedParams = await params;
+  const title =
+    resolvedParams.lang === "ar"
+      ? "الكيان للطاقة الشمسية"
+      : "Alkyan Solar Energy";
+  const description =
+    resolvedParams.lang === "ar"
+      ? "شركة الكيان للطاقة الشمسية - حلول الطاقة المتجددة"
+      : "Alkyan Solar Energy - Renewable Energy Solutions";
 
   return {
-    title:
-      resolvedParams.lang === "ar"
-        ? "الكيان للطاقة الشمسية"
-        : "Alkyan Solar Energy",
-    description:
-      resolvedParams.lang === "ar"
-        ? "شركة الكيان للطاقة الشمسية - حلول الطاقة المتجددة"
-        : "Alkyan Solar Energy - Renewable Energy Solutions",
+    metadataBase: new URL("https://alkyansolar.com"),
+    title,
+    description,
+    openGraph: {
+      type: "website",
+      locale: resolvedParams.lang === "ar" ? "ar_EG" : "en_US",
+      siteName: title,
+      title,
+      description,
+      images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/images/og-image.jpg"],
+    },
     icons: {
       icon: [
         {
-          url: "/images/logo/logo.png",
+          url: "/images/logo/logo.webp",
           sizes: "32x32",
-          type: "image/png",
+          type: "image/webp",
         },
         {
-          url: "/images/logo/logo.png",
+          url: "/images/logo/logo.webp",
           sizes: "16x16",
-          type: "image/png",
+          type: "image/webp",
         },
       ],
       apple: [
         {
-          url: "/images/logo/logo.png",
+          url: "/images/logo/apple-touch-icon.png",
           sizes: "180x180",
           type: "image/png",
         },

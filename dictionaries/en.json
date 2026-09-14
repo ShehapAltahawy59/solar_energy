@@ -92,7 +92,7 @@
         "capacity": "25 kW",
         "location": "El-Maghra",
         "client": "Tarek Awad",
-        "image": "/images/projects/agriculture/mogra.jpg",
+        "image": "/images/projects/agriculture/mogra.webp",
         
         "description": ""
       },
@@ -102,7 +102,7 @@
         "capacity": "10 HP",
         "location": "Sharm El-Sheikh Road",
         "client": "Engineer Salah",
-        "image": "/images/projects/agriculture/rassedr.jpg",
+        "image": "/images/projects/agriculture/rassedr.webp",
         "description": ""
       },
       {
@@ -112,18 +112,36 @@
         "capacity": "60 kW",
         "client": "Islam Mohamed",
         "description": "",
-        "image": "/images/projects/agriculture/wha7at.jpeg"
+        "image": "/images/projects/agriculture/wha7at.webp"
        
       }
     ],
     "completed": [
+      {
+        "id": 10,
+        "title": "Home Solar Station in Wadi El Malak",
+        "capacity": "1.8 kW",
+        "location": "Wadi El Malak",
+        "description": "1.8 kW station with a 6 kW inverter and a 48V/100Ah battery powering a home's loads in Wadi El Malak",
+        "image": "/images/projects/residential/wadi_elmalak_home_1.webp",
+        "image2": "/images/projects/residential/wadi_elmalak_home_2.webp"
+      },
+      {
+        "id": 11,
+        "title": "Warehouse Solar Station in Wadi El Malak",
+        "capacity": "6.5 kW",
+        "location": "Wadi El Malak",
+        "description": "6.5 kW station with a 48V/100Ah battery and a 6 kW inverter powering office loads, lighting and air conditioning inside a warehouse in Wadi El Malak",
+        "image": "/images/projects/commercial/wadi_elmalak_warehouse_1.webp",
+        "image2": "/images/projects/commercial/wadi_elmalak_warehouse_2.webp"
+      },
       {
         "id": 4,
         "title": "Deirb Negm Station",
         "capacity": "7.5 kW",
         "location": "Deirb Negm - Mansoura Road",
         "client": "Ahmed Mansour",
-        "image": "/images/projects/agriculture/negm.jpeg",
+        "image": "/images/projects/agriculture/negm.webp",
         "description": ""
       },
       {
@@ -132,7 +150,7 @@
         "capacity": "1.5 kW",
         "location": "Al-Abbasa Land",
         "client": "Amr Mohamed El-Sayed",
-        "image": "/images/projects/agriculture/abohammad.jpg",
+        "image": "/images/projects/agriculture/abohammad.webp",
         
         "description": ""
       },
@@ -143,7 +161,7 @@
         "capacity": "5 kW",
         "client": "Mr. Karim Mohamed",
         "description": "",
-        "image": "/images/projects/agriculture/awladsaqr.jpg"
+        "image": "/images/projects/agriculture/awladsaqr.webp"
       },
       {
         "id": 7,
@@ -151,7 +169,7 @@
         "location": "Ras Sedr City",
         "capacity": "1.5 kW",
         "client": "Engineer Salah",
-        "image": "/images/projects/agriculture/ras_serrd_off.jpg",
+        "image": "/images/projects/agriculture/ras_serrd_off.webp",
         "description": ""
         
       },
@@ -162,7 +180,7 @@
         "capacity": "7.5 kW",
         "description": "",
         "type": "",
-        "image": "/images/projects/agriculture/abohammad7.5.jpg"
+        "image": "/images/projects/agriculture/abohammad7.5.webp"
       },
       {
         "id": 9,
@@ -171,7 +189,7 @@
         "client": "Sheikh/El-Tarouti",
         "capacity": "N/A",
         "description": "Solar water heater for Sheikh Abdel Fattah El-Tarouti",
-        "image": "/images/projects/residential/sakan.jpg"
+        "image": "/images/projects/residential/sakan.webp"
       }
     ]
   },

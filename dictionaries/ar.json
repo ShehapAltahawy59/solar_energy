@@ -92,7 +92,7 @@
         "capacity": "25 كيلو وات",
         "location": "المغره",
         "client": " طارق عوض",
-        "image": "/images/projects/agriculture/mogra.jpg",
+        "image": "/images/projects/agriculture/mogra.webp",
        
         "description": ""
       },
@@ -102,7 +102,7 @@
         "capacity": "10 حصان",
         "location": "طريق شرم الشيخ",
         "client": " المهندس صلاح",
-        "image": "/images/projects/agriculture/rassedr.jpg",
+        "image": "/images/projects/agriculture/rassedr.webp",
         "description": ""
         
       },
@@ -114,18 +114,36 @@
         "client": "اسلام محمد",
         "description": "",
         
-        "image": "/images/projects/agriculture/wha7at.jpeg"
+        "image": "/images/projects/agriculture/wha7at.webp"
         
       }
     ],
     "completed": [
+      {
+        "id": 10,
+        "title": "محطة منزلية بوادي الملاك",
+        "capacity": "1.8 كيلو وات",
+        "location": "وادي الملاك",
+        "description": "محطة 1.8 كيلو وات مع إنفرتر 6 كيلو وات وبطارية 48/100 لتشغيل أحمال منزل في وادي الملاك",
+        "image": "/images/projects/residential/wadi_elmalak_home_1.webp",
+        "image2": "/images/projects/residential/wadi_elmalak_home_2.webp"
+      },
+      {
+        "id": 11,
+        "title": "محطة مخزن بوادي الملاك",
+        "capacity": "6.5 كيلو وات",
+        "location": "وادي الملاك",
+        "description": "محطة 6.5 كيلو وات مع بطارية 48/100 وإنفرتر 6 كيلو وات لتشغيل أحمال المكاتب والإنارة والتكييفات داخل مخزن بوادي الملاك",
+        "image": "/images/projects/commercial/wadi_elmalak_warehouse_1.webp",
+        "image2": "/images/projects/commercial/wadi_elmalak_warehouse_2.webp"
+      },
       {
         "id": 4,
         "title": "محطة ديرب نجم",
         "capacity": "7.5 كيلو وات",
         "location": "طريق ديرب نجم المنصوره",
         "client": "احمد منصور",
-        "image": "/images/projects/agriculture/negm.jpeg",
+        "image": "/images/projects/agriculture/negm.webp",
         
         "description": ""
       },
@@ -135,7 +153,7 @@
         "capacity": "1.5 كيلو وات",
         "location": "ارض العباسه",
         "client": "عمرو محمد السيد",
-        "image": "/images/projects/agriculture/abohammad.jpg",
+        "image": "/images/projects/agriculture/abohammad.webp",
         
         "description": ""
       },
@@ -147,7 +165,7 @@
         "client": "أ/ كريم محمد",
         "description": "",
         
-        "image": "/images/projects/agriculture/awladsaqr.jpg"
+        "image": "/images/projects/agriculture/awladsaqr.webp"
       },
       {
         "id": 7,
@@ -155,7 +173,7 @@
         "location": "مدينة راس صدر",
         "capacity": "1.5 كيلو وات",
         "client": "المهندس صلاح",
-        "image": "/images/projects/agriculture/ras_serrd_off.jpg",
+        "image": "/images/projects/agriculture/ras_serrd_off.webp",
         "description": ""
         
       },
@@ -166,7 +184,7 @@
         "capacity": "7.5 كيلو وات",
         "description": "",
         "type": "",
-        "image": "/images/projects/agriculture/abohammad7.5.jpg"
+        "image": "/images/projects/agriculture/abohammad7.5.webp"
       },
       {
         "id": 9,
@@ -175,7 +193,7 @@
         "client": "الشيخ/الطاروطي",
         "capacity": "N/A",
         "description": " سخان شمسي للشيخ عبد الفتاح الطاروطي",
-        "image": "/images/projects/residential/sakan.jpg"
+        "image": "/images/projects/residential/sakan.webp"
       }
     ]
   },

@@ -71,3 +71,21 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Alternate between a project's two photos */
+@keyframes crossfade {
+  0%, 40% { opacity: 0; }
+  50%, 90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-crossfade {
+  animation: crossfade 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-crossfade {
+    animation: none;
+    opacity: 0;
+  }
+}

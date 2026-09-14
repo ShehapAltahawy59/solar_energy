@@ -37,8 +37,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" type="image/png" href="/images/logo/logo.png" />
-        <link rel="apple-touch-icon" href="/images/logo/logo.png" />
+        <link rel="icon" type="image/webp" href="/images/logo/logo.webp" />
+        <link rel="apple-touch-icon" href="/images/logo/apple-touch-icon.png" />
       </head>
       <body
         className={clsx(

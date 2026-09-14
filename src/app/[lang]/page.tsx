@@ -38,10 +38,25 @@ export default async function Home({ params }: PageProps) {
   const dict = await getDictionary(resolvedParams.lang);
   const isRTL = resolvedParams.lang === "ar";
 
+  // FAQ structured data - eligible for rich results in search
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: Object.values(dict.faq.questions).map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
   return (
     <main
       className={`relative w-full overflow-x-hidden ${isRTL ? "rtl" : "ltr"}`}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <ContactButtons />
       {/* Hero Section Group - Everything that should be active under "الرئيسية" */}
       <div className="flex flex-col w-full">

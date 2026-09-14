@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Integrated Solar Energy Solutions",
-    "subtitle": "We provide innovative and environmentally friendly solutions for solar energy generation for homes, businesses, and farms",
+    "subtitle": "Design, supply and installation of solar power systems for homes, farms and businesses across Egypt",
     "cta": "Contact Us",
     "learnMore": "Our Projects"
   },
@@ -71,7 +71,86 @@
     "subtitle": "We are proud to have implemented many successful projects throughout Egypt",
     "viewAll": "View All Projects",
     "inProgress": "Projects in Progress",
-    "completed": "Completed Projects",
+    "completed": [
+      {
+        "id": 10,
+        "title": "Home Solar System with Battery Storage in Wadi El Malak",
+        "location": "Wadi El Malak",
+        "capacity": "1.8 kW",
+        "type": "Residential",
+        "description": "A 1.8 kW rooftop system on a galvanized steel structure, paired with a 6 kW inverter and a 48V / 100Ah battery to power the home during the day and store energy for the evening and power cuts.",
+        "image": "/images/projects/residential/wadi_elmalak_home_1.webp",
+        "image2": "/images/projects/residential/wadi_elmalak_home_2.webp"
+      },
+      {
+        "id": 11,
+        "title": "Warehouse & Office Solar Station in Wadi El Malak",
+        "location": "Wadi El Malak",
+        "capacity": "6.5 kW",
+        "type": "Commercial",
+        "description": "A 6.5 kW station on a metal warehouse roof with a 6 kW inverter and a 48V / 100Ah lithium (LiFePO4) battery, powering office loads, lighting and air conditioning inside the warehouse with clean energy and lower running costs.",
+        "image": "/images/projects/commercial/wadi_elmalak_warehouse_1.webp",
+        "image2": "/images/projects/commercial/wadi_elmalak_warehouse_2.webp"
+      },
+      {
+        "id": 4,
+        "title": "Solar Station in Diyarb Negm",
+        "location": "Diyarb Negm – Mansoura Road",
+        "capacity": "7.5 kW",
+        "client": "Ahmed Mansour",
+        "type": "Agricultural",
+        "description": "A 7.5 kW rooftop station surrounded by farmland on the Diyarb Negm – Mansoura road, installed on fixed mounts with a carefully chosen orientation to make the most of the sun.",
+        "image": "/images/projects/agriculture/negm.webp"
+      },
+      {
+        "id": 5,
+        "title": "Compact Solar Station in Abu Hammad",
+        "location": "Al Abbasa – Abu Hammad, Sharqia",
+        "capacity": "1.5 kW",
+        "client": "Amr Mohamed El Sayed",
+        "type": "Agricultural",
+        "description": "An economical 1.5 kW station on an elevated frame beside farmland in Al Abbasa, showing that solar power suits small projects on a limited budget too.",
+        "image": "/images/projects/agriculture/abohammad.webp"
+      },
+      {
+        "id": 6,
+        "title": "Solar Station in Awlad Saqr",
+        "location": "Awlad Saqr, Sharqia",
+        "capacity": "5 kW",
+        "client": "Mr. Karim Mohamed",
+        "type": "Agricultural",
+        "description": "A 5 kW station of high-efficiency monocrystalline panels on a galvanized rooftop structure, serving an agricultural site in Awlad Saqr.",
+        "image": "/images/projects/agriculture/awladsaqr.webp"
+      },
+      {
+        "id": 7,
+        "title": "Off-Grid Solar Station in Ras Sudr",
+        "location": "Ras Sudr, South Sinai",
+        "capacity": "1.5 kW",
+        "client": "Eng. Salah",
+        "type": "Off-grid",
+        "description": "A 1.5 kW stand-alone (off-grid) ground-mounted station in the desert of Ras Sudr, an ideal solution for sites far from the public grid.",
+        "image": "/images/projects/agriculture/ras_serrd_off.webp"
+      },
+      {
+        "id": 8,
+        "title": "7.5 kW Rooftop Solar Station in Abu Hammad",
+        "location": "Abu Hammad, Sharqia",
+        "capacity": "7.5 kW",
+        "type": "",
+        "description": "A 7.5 kW station laid out across the roof of a building overlooking farmland in Abu Hammad, with a panel layout designed to use all of the available roof space.",
+        "image": "/images/projects/agriculture/abohammad7.5.webp"
+      },
+      {
+        "id": 9,
+        "title": "Solar Water Heater in Zagazig",
+        "location": "Zagazig, Sharqia",
+        "client": "Sheikh Abdel Fattah El Tarouti",
+        "type": "Solar water heater",
+        "description": "A rooftop evacuated-tube solar water heater that supplies hot water from the sun, reducing electricity and gas consumption.",
+        "image": "/images/projects/residential/sakan.webp"
+      }
+    ],
     "moreText": "And many more successful projects in various governorates of Egypt",
     "fields": {
       "capacity": "Capacity",
@@ -88,108 +167,33 @@
     "showcase": [
       {
         "id": 1,
-        "title": "El-Maghra Station",
+        "title": "Agricultural Solar Station in El Maghra",
+        "location": "El Maghra",
         "capacity": "25 kW",
-        "location": "El-Maghra",
         "client": "Tarek Awad",
-        "image": "/images/projects/agriculture/mogra.webp",
-        
-        "description": ""
+        "type": "Agricultural",
+        "description": "A 25 kW ground-mounted station built on concrete foundations in the desert of El Maghra, supplying the farm with clean, reliable power. The panel arrays are set at a carefully studied tilt for maximum year-round output.",
+        "image": "/images/projects/agriculture/mogra.webp"
       },
       {
         "id": 2,
-        "title": "Ras Sedr Farm Station",
+        "title": "Solar Water Pump Station for a Farm in Ras Sudr",
+        "location": "Sharm El Sheikh Road – Ras Sudr",
         "capacity": "10 HP",
-        "location": "Sharm El-Sheikh Road",
-        "client": "Engineer Salah",
-        "image": "/images/projects/agriculture/rassedr.webp",
-        "description": ""
+        "client": "Eng. Salah",
+        "type": "Agricultural – water pump",
+        "description": "A ground-mounted solar station running a 10 HP water pump on a farm along the Sharm El Sheikh road in Ras Sudr, using free energy from the sun to cut irrigation running costs.",
+        "image": "/images/projects/agriculture/rassedr.webp"
       },
       {
         "id": 3,
-        "title": "Solar Station in El-Wahat",
-        "location": "El-Wahat",
+        "title": "60 kW Agricultural Solar Station in El Wahat",
+        "location": "El Wahat",
         "capacity": "60 kW",
         "client": "Islam Mohamed",
-        "description": "",
+        "type": "Agricultural",
+        "description": "One of our largest projects: a 60 kW ground-mounted station in El Wahat, installed by the Alkyan team on concrete foundations built for harsh desert conditions to deliver clean energy for farming.",
         "image": "/images/projects/agriculture/wha7at.webp"
-       
-      }
-    ],
-    "completed": [
-      {
-        "id": 10,
-        "title": "Home Solar Station in Wadi El Malak",
-        "capacity": "1.8 kW",
-        "location": "Wadi El Malak",
-        "description": "1.8 kW station with a 6 kW inverter and a 48V/100Ah battery powering a home's loads in Wadi El Malak",
-        "image": "/images/projects/residential/wadi_elmalak_home_1.webp",
-        "image2": "/images/projects/residential/wadi_elmalak_home_2.webp"
-      },
-      {
-        "id": 11,
-        "title": "Warehouse Solar Station in Wadi El Malak",
-        "capacity": "6.5 kW",
-        "location": "Wadi El Malak",
-        "description": "6.5 kW station with a 48V/100Ah battery and a 6 kW inverter powering office loads, lighting and air conditioning inside a warehouse in Wadi El Malak",
-        "image": "/images/projects/commercial/wadi_elmalak_warehouse_1.webp",
-        "image2": "/images/projects/commercial/wadi_elmalak_warehouse_2.webp"
-      },
-      {
-        "id": 4,
-        "title": "Deirb Negm Station",
-        "capacity": "7.5 kW",
-        "location": "Deirb Negm - Mansoura Road",
-        "client": "Ahmed Mansour",
-        "image": "/images/projects/agriculture/negm.webp",
-        "description": ""
-      },
-      {
-        "id": 5,
-        "title": "Abu Hamad Solar Station",
-        "capacity": "1.5 kW",
-        "location": "Al-Abbasa Land",
-        "client": "Amr Mohamed El-Sayed",
-        "image": "/images/projects/agriculture/abohammad.webp",
-        
-        "description": ""
-      },
-      {
-        "id": 6,
-        "title": "Solar Station in Awlad Saqr",
-        "location": "Awlad Saqr Center",
-        "capacity": "5 kW",
-        "client": "Mr. Karim Mohamed",
-        "description": "",
-        "image": "/images/projects/agriculture/awladsaqr.webp"
-      },
-      {
-        "id": 7,
-        "title": "Off-Grid Solar Station in Ras Sedr",
-        "location": "Ras Sedr City",
-        "capacity": "1.5 kW",
-        "client": "Engineer Salah",
-        "image": "/images/projects/agriculture/ras_serrd_off.webp",
-        "description": ""
-        
-      },
-      {
-        "id": 8,
-        "title": "Abu Hamad Solar Station",
-        "location": "Abu Hamad, Sharqia Governorate",
-        "capacity": "7.5 kW",
-        "description": "",
-        "type": "",
-        "image": "/images/projects/agriculture/abohammad7.5.webp"
-      },
-      {
-        "id": 9,
-        "title": "Solar Water Heater",
-        "location": "Zagazig",
-        "client": "Sheikh/El-Tarouti",
-        "capacity": "N/A",
-        "description": "Solar water heater for Sheikh Abdel Fattah El-Tarouti",
-        "image": "/images/projects/residential/sakan.webp"
       }
     ]
   },
@@ -212,7 +216,7 @@
     },
     "specializedTeam": {
       "title": "Specialized Team",
-      "description": "Team of engineers and technicians with experience in solar energy led by Eng. Ahmed Ibrahim"
+      "description": "Team of engineers and technicians with experience in solar energy led by Eng. Khalil Altahawy"
     },
     "professionalInstallation": {
       "title": "Professional Installation",
@@ -289,16 +293,12 @@
     "subtitle": "We're here to help",
     "address": {
       "title": "Address",
-      "text": "Al hafina - Abo Hammad , Al sharkia",
+      "text": "Al Hafayna, Abu Hammad, Sharqia",
       "mapUrl": "https://www.google.com/maps/place/31%C2%B001'37.6%22N+30%C2%B027'06.0%22E/@31.0271875,30.4516898,17.25z/data=!4m4!3m3!8m2!3d31.027099!4d30.451676"
     },
     "phone": {
       "title": "Phone",
-      "text": "+01064911198"
-    },
-    "email": {
-      "title": "Email",
-      "text": "info@almuhandis-solar.com"
+      "text": "+20 106 491 1198"
     },
     "form": {
       "name": "Name",
@@ -318,9 +318,8 @@
     "contactInfo": "Contact Information",
     "followUs": "Follow Us",
     "rights": "All rights reserved",
-    "location": "Cairo, Egypt",
+    "location": "Abu Hammad, Sharqia, Egypt",
     "phone": "Phone: 01064911198",
-    "email": "Email: info@example.com",
     "links": {
       "projects": "Our Projects",
       "services": "Our Services",
@@ -335,5 +334,25 @@
     "readMore": "Read More",
     "readLess": "Read Less",
     "whatsapp": "WhatsApp"
+  },
+  "seo": {
+    "siteName": "Alkyan Solar Energy",
+    "homeTitle": "Alkyan Solar Energy | Solar Power Installation in Egypt",
+    "homeDescription": "Design, supply, installation and maintenance of solar power systems for farms, water pumps, homes and businesses in Sharqia and across Egypt. Contact us for a site visit and quote.",
+    "projectsTitle": "Completed Solar Energy Projects",
+    "projectsDescription": "Browse solar stations built by Alkyan in El Wahat, El Maghra, Ras Sudr, Sharqia and Wadi El Malak: agricultural, residential and commercial systems, off-grid stations and solar water heaters.",
+    "keywords": [
+      "solar energy Egypt",
+      "solar panel installation",
+      "solar power stations",
+      "solar systems for farms",
+      "solar water pumps",
+      "home solar systems",
+      "off-grid solar",
+      "solar inverter and lithium batteries",
+      "solar water heater",
+      "solar company in Sharqia",
+      "Alkyan Solar Energy"
+    ]
   }
 }

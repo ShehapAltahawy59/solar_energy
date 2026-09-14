@@ -106,7 +106,6 @@ export default function Footer() {
             <div className="space-y-2 text-gray-300">
               <p>{dictionary.footer.location}</p>
               <p>{dictionary.footer.phone}</p>
-              <p>{dictionary.footer.email}</p>
             </div>
           </div>
         </div>

@@ -88,7 +88,7 @@ export default function ProjectsCarouselClient({
                   <div className="relative h-48 w-full mb-4 overflow-hidden rounded-lg">
                     <Image
                       src={project.imageUrl}
-                      alt={project.title}
+                      alt={`${project.title} - ${project.location}`}
                       fill
                       className={clsx(
                         "object-cover",

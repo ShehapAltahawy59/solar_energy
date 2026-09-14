@@ -106,7 +106,7 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              {/* Phone and Email */}
+              {/* Phone */}
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-2">
@@ -117,17 +117,6 @@ export default function ContactSection() {
                     className="text-gray-300 hover:text-green-500 transition-colors"
                   >
                     {dictionary.contact.phone.text}
-                  </a>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-2">
-                    <span>✉️</span> {dictionary.contact.email.title}
-                  </h3>
-                  <a
-                    href={`mailto:${dictionary.contact.email.text}`}
-                    className="text-gray-300 hover:text-green-500 transition-colors"
-                  >
-                    {dictionary.contact.email.text}
                   </a>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import animStyles from "@/app/styles_shared/animations.module.css";
 import Image from "next/image";
 import { Metadata } from "next";
 import { getDictionary, type Locale } from "../../../../lib/dictionaries";
+import { localizedUrl } from "../../../../lib/site";
 
 // Projects data is now loaded from dictionary
 
@@ -13,18 +14,34 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.lang);
-  const title = dict.projects.title;
+  const { seo } = await getDictionary(resolvedParams.lang);
+  const title = seo.projectsTitle;
+  const description = seo.projectsDescription;
+  const url = localizedUrl(resolvedParams.lang, "projects/");
 
   return {
     title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: {
+        ar: localizedUrl("ar", "projects/"),
+        en: localizedUrl("en", "projects/"),
+        "x-default": localizedUrl("ar", "projects/"),
+      },
+    },
     openGraph: {
+      type: "website",
+      url,
+      siteName: seo.siteName,
       title,
+      description,
       images: [{ url: "/images/og-projects.jpg", width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
+      description,
       images: ["/images/og-projects.jpg"],
     },
   };
@@ -91,7 +108,7 @@ export default async function ProjectsPage({ params }: PageProps) {
                   <div className="relative h-64 overflow-hidden">
                     <Image
                       src={project.image}
-                      alt={project.title}
+                      alt={`${project.title} - ${project.location}`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

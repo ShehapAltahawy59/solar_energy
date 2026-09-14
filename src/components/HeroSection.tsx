@@ -16,7 +16,7 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/new_cover3.webp"
-          alt="Solar Energy Solutions"
+          alt={dict.title}
           fill
           priority
           className="object-cover"
